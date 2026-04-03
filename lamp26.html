@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAMP Workshop — ML-assisted theory</title>
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #5b6472;
+      --line: #d7dce5;
+      --primary: #1f4b99;
+      --primary-dark: #173970;
+      --accent: #eef4ff;
+      --shadow: 0 10px 30px rgba(31, 41, 55, 0.08);
+      --maxw: 1100px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .topbar {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .topbar-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--primary-dark);
+    }
+
+    .nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #eaf1ff 0%, #f7f8fb 65%, #ffffff 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 56px 20px 42px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.84rem;
+      color: var(--primary-dark);
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.15;
+      color: #13213a;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 850px;
+      margin-bottom: 22px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .meta span {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.94rem;
+      box-shadow: var(--shadow);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--primary);
+      border-color: var(--line);
+    }
+
+    .btn-secondary:hover {
+      background: #f9fbff;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1.5rem;
+      color: #13213a;
+    }
+
+    .section p:last-child,
+    .section ul:last-child { margin-bottom: 0; }
+
+    .organizers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      background: #fbfcff;
+    }
+
+    .person-photo {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      margin-bottom: 12px;
+      background: #e9eef8;
+      display: block;
+    }
+
+    .person-role {
+      margin-top: 6px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .speaker-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 1.08rem;
+      color: var(--primary-dark);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .schedule-box {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fcfdff;
+    }
+
+    .schedule-box h3 {
+      margin: 0;
+      padding: 16px 18px;
+      background: var(--accent);
+      border-bottom: 1px solid var(--line);
+      color: var(--primary-dark);
+    }
+
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .schedule-table td {
+      padding: 12px 18px;
+      border-bottom: 1px solid #e8edf5;
+      vertical-align: top;
+      font-size: 0.96rem;
+    }
+
+    .schedule-table tr:last-child td { border-bottom: none; }
+
+    .schedule-table td:first-child {
+      width: 42%;
+      color: var(--primary-dark);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .topics {
+      columns: 2;
+      column-gap: 36px;
+      padding-left: 20px;
+    }
+
+    .topics li {
+      margin-bottom: 10px;
+      break-inside: avoid;
+    }
+
+    .notice {
+      padding: 16px 18px;
+      border-left: 4px solid var(--primary);
+      background: #f5f8ff;
+      border-radius: 10px;
+      margin-top: 16px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 10px 20px 40px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 760px) {
+      .topbar-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .topics { columns: 1; }
+
+      .schedule-table td:first-child {
+        width: auto;
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">LAMP Workshop</div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#organizers">Organizers</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#cfp">Call for Spotlights/Posters/Open Problems</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Workshop on ML-assisted theory</div>
+      <h1>Learning-driven Algorithms and Machine-aided Proofs (LAMP)</h1>
+      <p class="subtitle">
+        A workshop on machine learning for algorithm design, analysis, and proof generation — bringing together researchers in algorithms,
+        learning theory, optimization, verification, and automated reasoning.
+      </p>
+
+      <div class="meta">
+        <span>Two-day workshop</span>
+        <span>Tentative research talks, open problems, panels, and lightning talks</span>
+        <span>Audience: algorithms, ML theory, automated reasoning</span>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#cfp">Submit a spotlight / poster / open problem</a>
+        <a class="btn btn-secondary" href="#speakers">See tentative speakers</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about" class="section">
+      <h2>About the Workshop</h2>
+      <p>
+        Recent advances in machine learning are beginning to reshape how algorithms are designed, analyzed, and even proved correct.
+        Beyond using learning as a heuristic speed-up, a growing body of work explores ML for algorithm design and proofs:
+        learning-augmented algorithms with performance guarantees, data-driven synthesis of algorithmic strategies, and models that generate
+        or verify formal reasoning such as proofs, invariants, and certificates.
+      </p>
+      <p>
+        These developments raise foundational questions at the interface of theory and practice: When can learned components provably improve
+        worst-case guarantees or be used to give beyond worst-case guarantees? How should we formalize the interaction between data-driven
+        predictions and classical algorithmic analysis? And to what extent can machine learning assist in producing explanations or proofs
+        that are both correct and interpretable?
+      </p>
+      <p>
+        This workshop aims to bring together researchers from algorithms, learning theory, and automated reasoning to develop principled
+        frameworks, identify common abstractions, and chart future directions for using machine learning in advancing theoretical computer science.
+      </p>
+    </section>
+
+    <section id="organizers" class="section">
+      <h2>Organizers</h2>
+      <div class="organizers">
+        <div class="card">
+          <img class="person-photo" src="https://ui-avatars.com/api/?name=Dravyansh+Sharma&size=400&background=eaf1ff&color=1f4b99&bold=true" alt="Dravyansh Sharma" />
+          <h3>Dravyansh Sharma</h3>
+          <p>TTI-Chicago</p>
+        </div>
+        <div class="card">
+          <img class="person-photo" src="https://ui-avatars.com/api/?name=Sandeep+Silwal&size=400&background=eaf1ff&color=1f4b99&bold=true" alt="Sandeep Silwal" />
+          <h3>Sandeep Silwal</h3>
+          <p>University of Wisconsin–Madison</p>
+        </div>
+        <div class="card">
+          <img class="person-photo" src="https://ui-avatars.com/api/?name=Ellen+Vitercik&size=400&background=eaf1ff&color=1f4b99&bold=true" alt="Ellen Vitercik" />
+          <h3>Ellen Vitercik</h3>
+          <p>Stanford University</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="speakers" class="section">
+      <h2>Tentative Speakers</h2>
+      <p>
+        The following speakers are part of the tentative invite list for the workshop.
+      </p>
+
+      <div class="speaker-grid">
+        <div class="card">
+          <img class="person-photo" src="https://ui-avatars.com/api/?name=Maria-Florina+Balcan&size=400&background=f5f8ff&color=1f4b99&bold=true" alt="Maria-Florina Balcan" />
+          <h3>Maria-Florina Balcan</h3>
+          <p>Carnegie Mellon University</p>
+        </div>
+
+        <div class="card">
+          <img class="person-photo" src="https://ui-avatars.com/api/?name=Piotr+Indyk&size=400&background=f5f8ff&color=1f4b99&bold=true" alt="Piotr Indyk" />
+          <h3>Piotr Indyk</h3>
+          <p>MIT</p>
+        </div>
+
+        <div class="card">
+          <img class="person-photo" src="https://ui-avatars.com/api/?name=Anupam+Gupta&size=400&background=f5f8ff&color=1f4b99&bold=true" alt="Anupam Gupta" />
+          <h3>Anupam Gupta</h3>
+          <p>NYU</p>
+        </div>
+
+        <div class="card">
+          <img class="person-photo" src="https://ui-avatars.com/api/?name=Dylan+Foster&size=400&background=f5f8ff&color=1f4b99&bold=true" alt="Dylan Foster" />
+          <h3>Dylan Foster</h3>
+          <p>Microsoft</p>
+        </div>
+
+        <div class="card">
+          <img class="person-photo" src="https://ui-avatars.com/api/?name=Vincent+Cohen-Addad&size=400&background=f5f8ff&color=1f4b99&bold=true" alt="Vincent Cohen-Addad" />
+          <h3>Vincent Cohen-Addad</h3>
+          <p>Google</p>
+        </div>
+
+        <div class="card">
+          <img class="person-photo" src="https://ui-avatars.com/api/?name=Debmalya+Panigrahi&size=400&background=f5f8ff&color=1f4b99&bold=true" alt="Debmalya Panigrahi" />
+          <h3>Debmalya Panigrahi</h3>
+          <p>Duke University</p>
+        </div>
+
+        <div class="card">
+          <img class="person-photo" src="https://ui-avatars.com/api/?name=Ravi+Kumar&size=400&background=f5f8ff&color=1f4b99&bold=true" alt="Ravi Kumar" />
+          <h3>Ravi Kumar</h3>
+          <p>Google</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cfp" class="section">
+      <h2>Call for Spotlights, Posters, and Open Problems</h2>
+      <p>
+        We invite submissions for <strong>spotlight talks</strong>, <strong>posters</strong>, and <strong>open problems</strong> on topics related to the theme of the workshop, including but not limited to:
+      </p>
+
+      <ul class="topics">
+        <li>Data-driven algorithm design</li>
+        <li>Learning-augmented algorithms</li>
+        <li>Beyond worst-case analysis and theoretical frameworks for learned algorithms</li>
+        <li>Automated theorem proving and verification</li>
+        <li>ML-assisted program synthesis and invariant generation</li>
+        <li>Performative prediction and ML-based decision-making</li>
+        <li>Interpretable and verifiable ML models for algorithmic reasoning</li>
+        <li>Optimization, control, and learning in algorithm design</li>
+        <li>Empirical and theoretical studies bridging ML and classical algorithms</li>
+        <li>LLMs for algorithm design, configuration, reasoning, and analysis</li>
+        <li>Learning to optimize</li>
+        <li>Using ML to solve its own problems: robustness, privacy, and fairness</li>
+      </ul>
+
+      <div class="notice">
+        <strong>Submission details:</strong> This section can be updated later with deadlines, a submission link, formatting instructions,
+        notification dates, registration information, and travel support details.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Who Should Attend?</h2>
+      <p>
+        The workshop is intended for researchers and students interested in the interplay between machine learning and theoretical computer science,
+        including algorithms, optimization, online learning, automated reasoning, formal methods, verification, and learning-augmented decision making.
+      </p>
+      <p>
+        Planned activities include invited talks, spotlight presentations, posters, open-problem discussions, and collaborative sessions centered on ML-assisted theory.
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        For questions about the workshop, submissions, or logistics, please write to:
+        <br>
+        <a href="mailto:dravy+lamp26@ttic.edu">dravy[PLUS]lamp26[AT]ttic[DOT]edu</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    LAMP — Learning-driven Algorithms and Machine-aided Proofs · ML-assisted theory
+  </footer>
+</body>
+</html>
+
