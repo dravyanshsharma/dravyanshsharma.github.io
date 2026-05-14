@@ -76,16 +76,48 @@
       font-size: 1.1rem;
     }
 
+
+
     .logo-mark {
-      width: 44px;
-      height: 44px;
-      border: 2px solid rgba(255,255,255,0.85);
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      font-weight: 900;
-      background: rgba(255,255,255,0.1);
+      width: 86px;
+      height: 86px;
+      border-radius: 18px;
+      object-fit: cover;
+      border: 2px solid rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+      transition: transform 0.2s ease;
+      cursor: pointer;
     }
+
+    .logo-mark:hover {
+      transform: scale(1.04);
+    }
+
+    .logo-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 10, 25, 0.82);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 2rem;
+      backdrop-filter: blur(6px);
+    }
+
+    .logo-modal img {
+      max-width: min(900px, 92vw);
+      max-height: 90vh;
+      border-radius: 28px;
+      background: white;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+
+    .logo-modal.active {
+      display: flex;
+    }
+
 
     .nav-links {
       display: flex;
@@ -372,11 +404,16 @@
 <body>
   <header>
     <nav>
-      <a class="brand" href="#top" aria-label="LAW 2026 home">
-        <span class="logo-mark">LAW</span>
+<a class="brand" href="#top" aria-label="LAW 2026 home">
+        <img
+          class="logo-mark"
+          src="law.png"
+          alt="LAW 2026 Logo"
+          onclick="openLogoModal(event)"
+        />
         <span>LAW 2026</span>
-      </a>
-      <div class="nav-links">
+      </a>      
+<div class="nav-links">
         <a href="#about">About</a>
         <a href="#speakers">Speakers</a>
         <a href="#schedule">Schedule</a>
@@ -589,5 +626,26 @@
   <footer>
     © 2026 LAW Workshop. Learning in an Agentic World: Foundations and Challenges.
   </footer>
+  <div class="logo-modal" id="logoModal" onclick="closeLogoModal()">
+    <img src="law.png" alt="Expanded LAW 2026 Logo" />
+  </div>
+
+  <script>
+    function openLogoModal(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      document.getElementById('logoModal').classList.add('active');
+    }
+
+    function closeLogoModal() {
+      document.getElementById('logoModal').classList.remove('active');
+    }
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeLogoModal();
+      }
+    });
+  </script>
 </body>
 </html>
