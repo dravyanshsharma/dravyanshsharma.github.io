@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learning-Augmented Algorithms | COLT 2026 Tutorial</title>
+  <meta name="description" content="COLT 2026 tutorial on learning-augmented algorithms: algorithms with predictions and data-driven algorithm design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top">COLT 2026 Tutorial</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#resources">Resources</a>
+        <a href="#organizers">Organizers</a>
+      </div>
+    </nav>
+
+    <section id="top" class="hero-inner">
+      <p class="eyebrow">Learning-Augmented Algorithms</p>
+      <h2>Leveraging data for performance with theoretical guarantees</h2>
+      <p class="lede">
+        A COLT 2026 tutorial on algorithms with predictions and data-driven algorithm design:
+        two complementary frameworks for using data in algorithms while retaining rigorous guarantees.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#schedule">View schedule</a>
+        <a class="button" href="#resources">Explore resources</a>
+      </div>
+      <div class="meta-grid">
+        <div><span>Venue</span><strong>COLT 2026</strong></div>
+        <div><span>Format</span><strong>Tutorial</strong></div>
+        <div><span>Audience</span><strong>Learning theory + algorithms</strong></div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section two-col">
+      <div>
+        <p class="section-kicker">Motivation</p>
+        <h2>Algorithms that learn from data without giving up guarantees.</h2>
+      </div>
+      <div class="prose">
+        <p>
+          Classical algorithm design usually focuses on worst-case inputs. Modern applications, however,
+          often come with historical data, synthetic samples, heuristic advice, or learned predictions that
+          reveal structure in the instances of interest. This tutorial surveys principled ways to use such
+          information in algorithm design.
+        </p>
+        <p>
+          We focus on two frameworks especially relevant to the learning theory community. <strong>Algorithms
+          with predictions</strong> incorporate possibly noisy predictive advice to improve performance while
+          maintaining robust fallback guarantees. <strong>Data-driven algorithm design</strong> uses samples from an
+          application domain to select or tune algorithms from rich candidate classes, with PAC and online
+          learning guarantees.
+        </p>
+      </div>
+    </section>
+
+    <section class="section cards-section">
+      <p class="section-kicker">Themes</p>
+      <h2>What participants will learn</h2>
+      <div class="cards three">
+        <article class="card">
+          <h3>Consistency and robustness</h3>
+          <p>How to exploit accurate predictions while gracefully degrading to worst-case performance when predictions are unreliable.</p>
+        </article>
+        <article class="card">
+          <h3>PAC algorithm configuration</h3>
+          <p>How learning-theoretic tools yield generalization guarantees for choosing algorithms and tuning hyperparameters across instances.</p>
+        </article>
+        <article class="card">
+          <h3>Augmented inference</h3>
+          <p>How heterogeneous information sources can improve distribution testing, support-size estimation, private inference, and quantile release.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="speakers" class="section">
+      <p class="section-kicker">Speakers</p>
+      <h2>Confirmed tutorial speakers</h2>
+      <div class="speaker-grid">
+        <article class="speaker">
+          <h3><a href="https://www.cs.cmu.edu/~ninamf/">Maria-Florina “Nina” Balcan</a></h3>
+          <p>Carnegie Mellon University</p>
+        </article>
+        <article class="speaker">
+          <h3><a href="https://www.mit.edu/~vakilian/">Ali Vakilian</a></h3>
+          <p>Virginia Tech</p>
+        </article>
+        <article class="speaker">
+          <h3><a href="https://maryamaliakbarpour.com/">Maryam Aliakbarpour</a></h3>
+          <p>Rice University</p>
+        </article>
+        <article class="speaker">
+          <h3><a href="https://dravy.ttic.edu/">Dravyansh Sharma</a></h3>
+          <p>TTIC / IDEAL</p>
+        </article>
+        <article class="speaker">
+          <h3><a href="https://sandeepsilwal.com/">Sandeep Silwal</a></h3>
+          <p>University of Wisconsin–Madison</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule" class="section schedule-section">
+      <p class="section-kicker">Schedule</p>
+      <h2>Tutorial schedule</h2>
+      <div class="timeline">
+        <div class="slot"><time>40 min</time><div><strong>Maria-Florina Balcan (invited)</strong><p>Title: TBD</p></div></div>
+        <div class="slot"><time>20 min</time><div><strong>Ali Vakilian (invited)</strong><p>Title: TBD</p></div></div>
+        <div class="slot"><time>20 min</time><div><strong>Maryam Aliakbarpour</strong><p>Title: TBD</p></div></div>
+        <div class="slot"><time>20 min</time><div><strong>Dravyansh Sharma</strong><p>Principled hyperparameter tuning in core ML algorithms</p></div></div>
+        <div class="slot"><time>20 min</time><div><strong>Sandeep Silwal</strong><p>Title: TBD</p></div></div>
+      </div>
+      <p class="note">Times and talk titles are tentative.</p>
+    </section>
+
+    <section id="resources" class="section resources-section">
+      <p class="section-kicker">Useful resources</p>
+      <h2>Background readings, courses, and reference pages</h2>
+      <div class="resource-columns">
+        <div class="resource-box">
+          <h3>Course materials</h3>
+          <ul>
+            <li><a href="https://home.ttic.edu/~avrim/MLforAD25/">Machine Learning for Algorithm Design</a>, TTIC 31290, Fall 2025.</li>
+            <li><a href="https://www.cs.cmu.edu/~ninamf/papers/DDAD-chapter.pdf">Data Driven Algorithm Design</a>, Beyond Worst-Case Analysis book chapter.</li>
+          </ul>
+        </div>
+        <div class="resource-box">
+          <h3>Algorithms with predictions</h3>
+          <ul>
+            <li><a href="https://algorithms-with-predictions.github.io/">ALPS: Algorithms with Predictions</a>, a curated research resource.</li>
+            <li><a href="https://homepages.cwi.nl/~dadush/reading-group/learning-augmented/index.html">Reading Group on Learning-Augmented Algorithms</a>, CWI.</li>
+            <li><a href="https://theory.stanford.edu/~sergei/stoc2022alps.html">STOC 2022 Workshop on Algorithms with Predictions</a>.</li>
+            <li><a href="https://people.csail.mit.edu/indyk/alps.html">Workshop on Algorithms with Predictions</a>, MIT CSAIL.</li>
+            <li><a href="https://proceedings.mlr.press/v162/chen22v.html">Faster Fundamental Graph Algorithms via Learned Predictions</a>, ICML 2022.</li>
+          </ul>
+        </div>
+        <div class="resource-box">
+          <h3>Data-driven algorithm design</h3>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=iE2HNk09xow">Approximation Guarantees for Data-Driven Algorithm Design</a>, Avrim Blum talk.</li>
+            <li><a href="https://dl.acm.org/doi/10.1145/3406325.3451066">How Much Data Is Sufficient to Learn High-Performing Algorithms?</a>, STOC 2021.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="organizers" class="section two-col">
+      <div>
+        <p class="section-kicker">Organizers</p>
+        <h2>Contact</h2>
+      </div>
+      <div class="prose compact">
+        <p><strong>Maryam Aliakbarpour</strong>, Rice University<br><a href="mailto:maryama@rice.edu">maryama[AT]rice.edu</a></p>
+        <p><strong>Dravyansh Sharma</strong>, TTIC and Northwestern University<br><a href="mailto:dravy@ttic.edu">dravy[AT]ttic.edu</a></p>
+        <p><strong>Sandeep Silwal</strong>, University of Wisconsin–Madison<br><a href="mailto:silwal@cs.wisc.edu">silwal[AT]cs.wisc.edu</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Learning-Augmented Algorithms: Leveraging data for performance with theoretical guarantees.</p>
+    <p>COLT 2026 tutorial website.</p>
+  </footer>
+</body>
+</html>
