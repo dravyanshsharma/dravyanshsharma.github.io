@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LAW 2026 | Learning in an Agentic World</title>
   <style>
+
     :root {
       --navy: #0b1736;
       --blue: #1f5eff;
@@ -399,6 +400,82 @@
         padding: 1.4rem;
       }
     }
+.accepted-abstracts-intro {
+    max-width: 900px;
+    margin: 0 auto 1.5rem auto;
+    color: #444;
+  }
+  .abstract-list {
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0.85rem;
+  }
+  .abstract-card {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  .abstract-card summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 1rem 1.15rem;
+    display: grid;
+    gap: 0.35rem;
+    position: relative;
+  }
+  .abstract-card summary::-webkit-details-marker { display: none; }
+  .abstract-card summary::after {
+    content: "+";
+    position: absolute;
+    right: 1.15rem;
+    top: 1rem;
+    font-size: 1.35rem;
+    line-height: 1;
+    color: #2d4d7f;
+  }
+  .abstract-card[open] summary::after { content: "–"; }
+  .abstract-title {
+    font-weight: 700;
+    font-size: 1.02rem;
+    color: #1f2a44;
+    padding-right: 2rem;
+  }
+  .abstract-authors {
+    font-size: 0.94rem;
+    color: #555;
+    padding-right: 2rem;
+  }
+  .abstract-body {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0.95rem 1.15rem 1.1rem 1.15rem;
+    background: #fbfcff;
+  }
+  .abstract-pdf-link {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #2d4d7f;
+    text-decoration: none;
+  }
+  .abstract-pdf-link:hover {
+    text-decoration: underline;
+  }
+  .abstract-pdf-frame {
+    width: 100%;
+    height: 620px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    background: #fff;
+  }
+  @media (max-width: 700px) {
+    .abstract-pdf-frame {
+      height: 520px;
+    }
+  }
   </style>
 </head>
 <body>
@@ -418,6 +495,7 @@
         <a href="#speakers">Speakers</a>
         <a href="#schedule">Schedule</a>
         <a href="#call">Call for Abstracts</a>
+<a href="#accepted-abstracts">Accepted Abstracts</a>
         <a href="#dates">Important Dates</a>
         <a href="#organizers">Organizers</a>
         <a href="#registration">Registration</a>
@@ -571,7 +649,172 @@
         </p>
       </div>    
 </section>
-
+<section id="accepted-abstracts">
+<h2>Accepted Abstracts</h2>
+<p class="accepted-abstracts-intro">Titles and authors are listed below. Click on any title to expand and view the submitted PDF.</p>
+<div class="abstract-list">
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Distribution-Free Sequential Prediction with Abstentions</span>
+<span class="abstract-authors">Jialin Yu; Moïse Blanchard</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-4.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-4.pdf" title="Abstract-4.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-4.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Resource-Bounded Discovery of Reusable Actions</span>
+<span class="abstract-authors">Roshan Klein-Seetharaman</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-2.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-2.pdf" title="Abstract-2.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-2.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">How Recursive Language Models Generalize</span>
+<span class="abstract-authors">Chenxiao Yang; Zhiyuan Li; David McAllester; Nathan Srebro</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-11.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-11.pdf" title="Abstract-11.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-11.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Near-Optimal Last-Iterate Convergence for Zero-Sum Games with Bandit Feedback and Opponent Actions</span>
+<span class="abstract-authors">Soumita Hait; Ping Li; Haipeng Luo; Mengxiao Zhang</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-8.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-8.pdf" title="Abstract-8.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-8.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Selective Rigidity: An Impossibility Result and Benchmark for Identity-Preserving Agent Learning</span>
+<span class="abstract-authors">Anupam Srivastava</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-13.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-13.pdf" title="Abstract-13.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-13.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Subsidy Design for Better Social Outcomes</span>
+<span class="abstract-authors">Maria-Florina Balcan; Matteo Pozzi; Dravyansh Sharma</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-7.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-7.pdf" title="Abstract-7.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-7.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Safe Learning of Multi-Agent Action Models from Concurrent Joint Action Observations</span>
+<span class="abstract-authors">Argaman Mordoch; Ori Karat; Lea Shmilovich; Yarin Benjamin; Brendan Juba; Roni Stern</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-5.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-5.pdf" title="Abstract-5.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-5.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Hair-Trigger Alignment: Black-Box Evaluation Cannot Guarantee Post-Update Alignment</span>
+<span class="abstract-authors">Yavuz Bakman; Duygu Nur Yaldiz; Salman Avestimehr; Sai Praneeth Karimireddy; Eleni Triantafillou; Peter Kairouz</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-16.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-16.pdf" title="Abstract-16.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-16.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Two-Sided Time-Independent Regret for Matching Markets with Limited Interviews</span>
+<span class="abstract-authors">Amirmahdi Mirfakhar; Xuchuang Wang; Mengfan Xu; Hedyeh Beyhaghi; Mohammad Hajiesmaili</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-9.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-9.pdf" title="Abstract-9.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-9.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">On Randomized Algorithms in Online Strategic Classification</span>
+<span class="abstract-authors">Chase Hutton; Adam Melrod; Han Shao</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-14.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-14.pdf" title="Abstract-14.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-14.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Last-Iterate Convergence for Symmetric, General-Sum, 2 × 2 Games Under the Exponential Weights Dynamic</span>
+<span class="abstract-authors">Guanghui Wang; Krishna Acharya; Lokranjan Lakshmikanthan; Juba Ziani; Vidya Muthukumar</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-15.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-15.pdf" title="Abstract-15.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-15.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Reaching a Consensus in Predictive Loops</span>
+<span class="abstract-authors">Jiduan Wu; Rediet Abebe; Celestine Mendler-Dünner</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-3.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-3.pdf" title="Abstract-3.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-3.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">PAC Learning with Improvements</span>
+<span class="abstract-authors">Idan Attias; Avrim Blum; Keziah Naggita; Donya Saless; Dravyansh Sharma; Matthew Walter</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-6.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-6.pdf" title="Abstract-6.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-6.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Geometry-Aware, Adaptive Risk for Agents: A Coherent-Risk and Wasserstein-Robust Foundation for Learning under Interaction and Evolving Uncertainty</span>
+<span class="abstract-authors">Deep Ganguly</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-10.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-10.pdf" title="Abstract-10.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-10.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Regularized Robustly Reliable Learning</span>
+<span class="abstract-authors">Avrim Blum; Donya Saless</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-12.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-12.pdf" title="Abstract-12.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-12.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Strategic PAC Learnability via Geometric Definability</span>
+<span class="abstract-authors">Yuval Filmus; Shay Moran; Elizaveta Nesterova; Nir Rosenfeld; Alexander Shlimovich</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-1.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-1.pdf" title="Abstract-1.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-1.pdf</iframe>
+</div>
+</details>
+</div>
+</section>
     <section id="dates">
       <span class="tagline">Important Dates</span>
       <h2>Important Dates</h2>
