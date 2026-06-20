@@ -180,3 +180,8 @@ li { margin: 0 0 12px; color: var(--muted); }
   .slot { grid-template-columns: 1fr; gap: 4px; }
   .footer { flex-direction: column; }
 }
+
+.speaker { text-align: center; } 
+.speaker-photo-link { display: inline-block; margin-bottom: 1rem; } 
+.speaker-photo { width: 160px; height: 160px; object-fit: cover; object-position: center; border-radius: 50%; display: block; margin: 0 auto; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.14); border: 3px solid #fff; background: #f8fafc; } 
+.speaker h3 { margin-top: 0.4rem; } @media (max-width: 640px) { .speaker-photo { width: 130px; height: 130px; } }
