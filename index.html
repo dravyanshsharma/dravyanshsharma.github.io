@@ -1,378 +1,1179 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>Dravyansh Sharma</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dravyansh Sharma</title>
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+  <link rel="icon" href="images/ttic.ico">
 
-	<div id="page">
-		<a href="#" class="js-nav-toggle nav-toggle"><i></i></a>
-		<aside id="aside" role="complementary" class="js-fullheight text-center">
-			<div class="hero-wrap img mb-4" style="background-image: url(images/d.jpg);"></div>
+  <meta name="description" content="Dravyansh Sharma is an IDEAL Postdoctoral Researcher in Chicago working on learning theory, LLM verifiers, data-driven algorithm design, hyperparameter tuning, and reliable machine learning.">
+  <meta property="og:title" content="Dravyansh Sharma">
+  <meta property="og:description" content="Research in learning theory, post-training LLM verifiers, reliable ML, and data-driven algorithm design.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dravy.ttic.edu/">
 
-		</aside>
-		<div id="main">
-			<div class="hero-wrap js-fullheight" data-stellar-background-ratio="0.35">
-				<div class="overlay"></div>
-				<div class="js-fullheight d-flex justify-content-center align-items-center">
-					<div class="col-md-8 text text-center">
-						<div class="desc">
-							<h1 class="mb-4">Dravyansh Sharma</h1>
-							<p class="mb-4">I am currently an <a href="https://www.ttic.edu/postdoc/">IDEAL Postdoc</a> in Chicago. I completed my PhD in the Computer Science Department at the Carnegie Mellon University, and was fortunate to be  
-							advised by <a href="https://www.cs.cmu.edu/~ninamf/">Nina Balcan</a>. I am interested in designing
-								algorithms for machine learning with strong and provable performance guarantees. <!-- Previously I have worked with the Speech team at <a href="https://about.google/intl/en_us/">Google</a> and completed my 
-								undergraduate studies at <a href="http://www.iitd.ac.in/">IIT Delhi</a>. --></p>
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #5f6b7a;
+      --link: #2457a6;
+      --link-hover: #123b75;
+      --border: #e6e2d9;
+      --soft: #f5f1e8;
+      --max-width: 1080px;
+      --accent-soft: #eef4ff;
+      --accent-border: #d8e5ff;
+    }
 
-<p><a href="#news" class="btn-custom">Recent news </a>
-                                                                &nbsp;&nbsp;&nbsp;
-  
-							<p><a href="#pubs" class="btn-custom">Research </a>
-								&nbsp;&nbsp;&nbsp;
-								<a href="resume.pdf" class="btn-custom">Résumé <span class="ion-ios-arrow-down"></span></a>
-								<!-- &nbsp;&nbsp;&nbsp; -->
-								<!-- <a href="#ambi" class="btn-custom">Recherché <span class="ion-ios-arrow-down"></span></a> -->
-								&nbsp;&nbsp;&nbsp;
-								<a href="#contact" class="btn-custom">Reach me</a>
-							</p>
-							<p>&nbsp;&nbsp;&nbsp;</p>
-							<p>&nbsp;&nbsp;&nbsp;</p>
-							<p>&nbsp;&nbsp;&nbsp;</p>
-							<p>&nbsp;&nbsp;&nbsp;</p>
-							<p>&nbsp;&nbsp;&nbsp;</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		<section class="ftco-section">
-<div class="container" id="news">
-                <div class="row justify-content-center mb-5 pb-2">
-            <h2 class="mb-i4">Recent News and Highlights</h2>
-<ul  style="list-style-type:none;">
-<li>&starf; Organizing a new workshop <a href="https://dravy.ttic.edu/law2026.html">Learning in an Agentic World: Foundations and Challenges</a> at COLT 2026 on June 29 at San Diego (with Hedyeh Beyhaghi, Han Shao and Avrim Blum). Consider submitting to our Call for Abstracts!
-<li>&starf; Organizing a workshop on <a href="https://dravy.ttic.edu/lamp26.html">Learning-driven Algorithms and Machine-aided Proofs (LAMP)</a> at TTIC on August 6-7, 2026 (with Sandeep Silwal and Ellen Vitercik). Consider submitting to our call for spotlights/posters/open problems!
-<li>&starf; Presented a tutorial on <a href="https://neurips.cc/virtual/2025/loc/san-diego/tutorial/109594">New Frontiers of Hyperparameter Optimization</a> at NeurIPS 2025 (with Nina Balcan and Colin White)!
-<li>&starf; Taught a new course <a href="https://home.ttic.edu/~avrim/MLforAD25/"> TTIC 31290 - Machine Learning for Algorithm Design</a> with Avrim Blum (Fall 2025).
-<li>&starf; Attending AISTATS 2026 to present my work <a href="https://arxiv.org/abs/2512.05084">Gradient Descent with Provably Tuned Learning-rate Schedules</a>. See you in Morocco!
-<li>&starf; Service: Area Chair at ICML 2026, NeurIPS 2026 and NeurIPS 2025.
-<li>&starf; Reviewer: COLT 2026, JMLR 2026, TMLR 2026, UAI 2026, AISTATS 2026, SODA 2026, ITCS 2026.
-<li>&starf; Three accepted papers at NeurIPS 2025 (including one spotlight).
-<li>&starf; Gave a tutorial at AutoML 2025, "Limitations of State-of-the-Art and a New Principled Framework for HPO and Algorithm Selection" (<a href="AutoML25-final-dravy.pdf">Slides</a>).</li>
-<li>&starf;
-Gave a tutorial at UAI 2025, <a href="https://www.auai.org/uai2025/tutorials">Hyperparameter Optimization and Algorithm Selection: Practical Techniques, Theory, and New Frontiers</a>.
+    * { box-sizing: border-box; }
 
-<!--
-<li>&starf;  Attending NeurIPS 2025 in San Diego. Come to our <a href="https://neurips.cc/virtual/2025/loc/san-diego/tutorial/109594">tutorial</a>! (<a href="neurips25-final.pdf">Slides</a>)
-<li>&starf;  Presenting six accepted papers at NeurIPS 2025 (three in the main conference, three in workshops). Meet me at the poster sessions!
-<li>&bull;  Giving a talk at the <a href="https://theory.cs.northwestern.edu/2025/11/14/junior-theorists-workshop-2025/">Chicago Junior Theorists Workshop 2025</a>.
-<li>&bull; New on arXiv "<a href="https://arxiv.org/abs/2512.05084">Gradient Descent with Provably Tuned Learning-rate Schedules</a>".
+    html { scroll-behavior: smooth; }
 
-<li style="color:black;"><b> November 2025 </b></li>
-<li>&starf; Teaching a new course <a href="https://home.ttic.edu/~avrim/MLforAD25/">TTIC 31290 - Machine Learning for Algorithm Design</a> with Avrim Blum (Fall 2025). 
-<li>&starf; Invited to serve as an Area Chair for ICML 2026.
-<li>&bull; Organizing the poster session for the IDEAL <a href="https://www.ideal-institute.org/2025/09/09/2025-ideal-get-ready-for-research-workshop">Get Ready for Research Workshop 2025</a>.</li>
-<li>&bull; New on arXiv "Algorithm Design and Stronger Guarantees
-for the Improving Multi-Armed Bandits Problem", joint with Avrim Blum, Marten Garicano, and Kavya Ravichandran.
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
+    }
 
-<li style="color:black;"><b> October 2025 </b></li>
-<li>&bull; Gave a talk "Hyperparameter Optimization and Algorithm Selection" at INFORMS 2025, Atlanta.
-<li>&starf; Three papers accepted at NeurIPS 2025 workshops:</li>
-<li>&nbsp;&nbsp;&bull; OPT2025, Optimization for Machine Learning.</li>
-<li>&nbsp;&nbsp;&bull; Reliable ML from Unreliable Data.</li>
-<li>&nbsp;&nbsp;&bull; DiffCoALG: Differentiable Learning of Combinatorial Algorithms.</li>
+    a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(36, 87, 166, 0.25);
+    }
 
-<li style="color:black;"><b> September 2025 </b></li>
-<li>&starf; Three papers accepted at NeurIPS 2025 (including a spotlight)! Congratulations to all my co-authors (Nina Balcan, Avrim Blum, Zhiyuan Li, Anh Nguyen and Alec Sun)!
-<li>&bull; Gave a talk at the Theory Seminar at the Johns Hopkins University.</li>
-<li>&bull; Gave a tutorial at AutoML 2025, "Limitations of State-of-the-Art and a New Principled Framework for HPO and Algorithm Selection" (<a href="AutoML25-final-dravy.pdf">Slides</a>).</li>
-<li>&bull; Gave a talk "Configuring neural networks and tuning gradient descent hyperparameters" at the Algorithms Seminar at Northwestern University.<li> 
+    a:hover {
+      color: var(--link-hover);
+      border-bottom-color: var(--link-hover);
+    }
 
-<li style="color:black;"><b> August 2025 </b></li>
-<li>&starf; Attending IJCAI 2025 in Montreal. <a href="IJCAI-25-poster.pdf">Poster</a> of our work invited to the Best Paper from Sister Conferences Track.
-<li>&bull; Gave a talk titled "Towards Principled Hyperparameter Optimization and Algorithm Selection" at Université de Montréal.</li>
-<li>&bull; Presented a poster at the wonderful <a href="https://sites.google.com/ttic.edu/incentivesdatasharing/home?authuser=0">Incentives for Collaborative Learning and Data Sharing</a> Summer Workshop at TTIC.
-</li>
-<li>&starf; Our proposal (joint with Nina Balcan and Colin White) has been accepted as one of the NeurIPS 2025 tutorials!</li>
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 24px 22px 64px;
+    }
 
-<li style="color:black;"><b> July 2025 </b></li>
-<li>&starf; Awarded <a href="https://www.auai.org/uai2025/topreviewers">Top Reviewer</a> at UAI 2025.</li>
-<li>&bull; Our work <a href="https://arxiv.org/abs/2409.04367">Algorithm Configuration for Structured Pfaffian Settings</a> (joint with Nina Balcan and Anh Nguyen) accepted for presentation at AutoML 2025 non-archival track.
-<li>&starf; Attending UAI 2025 in Rio de Janeiro. Come to my in-person <a href="https://www.auai.org/uai2025/tutorials">tutorial</a>! </li>
-<li>&starf; Attending ICML 2025 in Vancouver. <a href="https://recorder-v3.slideslive.com/#/share?share=101957&s=fe07876e-b772-4c26-aee6-baa2af6bd1f4">Video</a> of our work.</li>
-<li>&bull; New on arxiv <a href="https://arxiv.org/abs/2507.05084">Distribution-dependent Generalization Bounds for Tuning Linear Regression Across Tasks</a> (with Nina Balcan and Saumya Goyal).
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 16px;
+      padding: 4px 0 14px;
+      font-size: 0.96rem;
+    }
 
-<li style="color:black;"><b> June 2025 </b></li>
-<li>&starf; My proposal "Limitations of State-of-the-Art and a New Principled Framework for HPO and Algorithm Selection" has been accepted as one of the 2025 AutoML tutorials.
-<li>&bull; Gave a talk "Principled Hyperparameter Optimization and Algorithm Selection" at the Capital Area Theory Seminar (CATS) at the University of Maryland, College Park.
-<li>&bull; Helped organize <a href="https://www.ideal-institute.org/2025/05/06/ideal-annual-meeting-2025/">IDEAL Annual Meeting</a> (with Lev Reyzin). Gave a talk titled "Principled Hyperparameter Tuning and Algorithm Selection" at the University of Illinois Chicago.</li>
-<li>&bull; Five accepted workshop papers (three at ICML 2025, one at IJCAI 2025, one at UAI 2025).</li>
+    .topbar a {
+      color: var(--muted);
+      border-bottom: none;
+      font-weight: 650;
+    }
 
-<li>&bull; New on arxiv <a href="https://arxiv.org/abs/2506.05252">Conservative classifiers do consistently well with improving agents: characterizing statistical and online learning</a> (with Alec Sun).
+    .topbar a:hover {
+      color: var(--link);
+    }
 
-<li style="color:black;"><b> May 2025 </b></li>
-<li>&starf;  Our work <a href="https://arxiv.org/abs/2505.22650">On Learning Verifiers for Chain-of-Thought Reasoning</a> (joint with Nina Balcan, Avrim Blum and Zhiyuan Li) is available as a pre-print.</li>
-<li>&starf; New on arxiv <a href="https://arxiv.org/abs/2405.15911">Learning accurate and interpretable tree-based models</a> (joint with Nina Balcan), an extended version of earlier work that won the <a href="https://www.auai.org/uai2024/best_papers">Outstanding Student Paper Award</a> at UAI 2024.</li>
-<li>&bull; Presented a poster at the "Midwest Optimization & Statistical Learning Conference 2025" at Northwestern University.</li>
-<li>&bull; Our work <i>Tuning Algorithmic and Architectural Hyperparameters in Graph-Based Semi-Supervised Learning with Provable Guarantees</i> (joint with Ally Du and Eric Huang) accepted at UAI 2025.
-</li>
-<li>&bull;  Our work (joint with Nina Balcan) <i>Learning Accurate and Interpretable Decision Trees (Extended Abstract)</i> accepted at the Best Paper Track for Sister Conferences at IJCAI 2025. 
-            </li>
-<li>&bull;  Our work <a href="https://arxiv.org/abs/2503.03184">PAC Learning with Improvements</a> (joint with Idan Attias, Avrim Blum, Keziah Naggita, Donya Saless and Matthew Walter) accepted at ICML 2025.
-</li>
-<li>&bull;  Our paper titled <a href="https://arxiv.org/abs/2409.04367">Algorithm Configuration for Structured Pfaffian Settings</a> (joint with Nina Balcan and Anh Nguyen) published in TMLR 2025.
-</li>
-<li style="color:black;"><b> April 2025 </b></li>
-<li>&bull;  Gave a talk at TTIC on our recent work <i>Provable tuning of deep learning model hyperparameters</i> (joint with Nina Balcan and Anh Nguyen).
-</li>
-<li>&starf;  My proposal <a href="https://www.auai.org/uai2025/tutorials">Hyperparameter Optimization and Algorithm Selection: Practical Techniques, Theory, and New Frontiers</a> has been accepted as one of the 2025 UAI tutorials. Stay tuned!
-</li>
-<li>&starf;  Invited to serve as an Area Chair at NeurIPS 2025.
-</li>
-<li>&bull;  Presented our work <i>Provable tuning of deep learning model hyperparameters</i> (joint with Nina Balcan and Anh Nguyen) at the <a href="https://www.ideal-institute.org/2025/03/07/understanding-the-mechanisms-of-deep-learning-and-generative-modeling/">IDEAL workshop on "Understanding the Mechanisms of Deep Learning and Generative Modeling"</a> at Northwestern University.
-</li>
-<li>&bull;  Gave a talk titled <i>Provable tuning of deep learning model hyperparameters</i> (based on joint work with Nina Balcan and Anh Nguyen) at the Theory lunch at the University of Chicago.
-</li>
-<li style="color:black;"><b> March 2025 </b></li>
-<li>&starf;  Session Chair at AAAI 2025 sessions on <i>Constraint Satisfaction and Optimization</i>.
-</li> 
-<li>&bull;  Our work titled <a href="https://arxiv.org/abs/2503.03184">PAC Learning with Improvements</a> (joint with Idan Attias, Avrim Blum, Keziah Naggita, Donya Saless and Matthew Walter) available as a pre-print.
-</li>
-<li>&bull;  Attending AAAI 2025 in Philly. Presenting <a href="https://arxiv.org/abs/2501.02926">Offline-to-online hyperparameter transfer for stochastic bandits</a>, joint work with Arun Suggala.
-</li>
-<li> Feb 2025. Our work titled <a href="https://arxiv.org/abs/2502.12937">Tuning Algorithmic and Architectural Hyperparameters in Graph-Based Semi-Supervised Learning with Provable Guarantees</a> (joint with Ally Du and Eric Huang) is available as a pre-print.
-</li>
-<li> Jan 2025. Our work titled <a href="https://arxiv.org/abs/2501.13734">Sample complexity of data-driven tuning of model hyperparameters in neural networks with structured parameter-dependent dual function</a> (joint with Nina Balcan and Anh Nguyen) is available as a pre-print.
-</li>
-<li> Dec 2024. Attended NeurIPS 2024 in Vancouver to present two posters.
-</li>
-<li> Sep 2024. Started as a postdoc at IDEAL (The Institute for Data, Econometrics, Algorithms, and Learning), part of NSF TRIPODS, hosted by <a href="https://home.ttic.edu/~avrim/">Avrim Blum</a> (TTIC) and <a href="https://users.cs.northwestern.edu/~aravindv/">Aravindan Vijayaraghavan</a> (Northwestern).
-</li>
-<li> July 2024. Our work (joint with Nina Balcan) <a href="https://arxiv.org/abs/2405.15911">Learning Accurate and Interpretable Decision Trees</a> won the <a href="https://www.auai.org/uai2024/best_papers">Outstanding Student Paper Award</a> at UAI 2024.
-</ul>
--->
-</div>
-</div>
-    	<div class="container" id="pubs">
-    		<div class="row justify-content-center mb-5 pb-2">
-            <h2 class="mb-4">Publications</h2>
-            <ul style="list-style-type:none;">
+    header.hero {
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: 32px;
+      align-items: center;
+      padding: 26px 0 28px;
+      border-bottom: 1px solid var(--border);
+    }
 
-<li><b> 2026 </b></li>
-<li> [C25] <a href="https://arxiv.org/abs/2512.05084">Gradient Descent with Provably Tuned Learning-rate Schedules</a>, AISTATS 2026</br>
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin: 0 0 8px;
+      font-weight: 700;
+    }
 
-<li><b> 2025 </b></li>
-<li> [C24] <a href="https://arxiv.org/abs/2506.05252">Learning with improvements in challenging and natural settings</a>, NeurIPS 2025</br>
-        with <i>Alec Sun</i>
-</li>
-<li> [C23] <a href="https://arxiv.org/abs/2505.22650">On Learning Verifiers for Chain-of-Thought Reasoning</a>, NeurIPS 2025</br>
-        with <i>Maria-Florina Balcan</i>, <i>Avrim Blum</i> and <i>Zhiyuan Li</i>
-</li>
-<li> [C22] <a href="https://arxiv.org/abs/2501.13734">Sample complexity of data-driven tuning of model hyperparameters in neural networks with structured parameter-dependent dual function</a>, NeurIPS 2025</br>
-        with <i>Maria-Florina Balcan</i> and <i>Anh Nguyen</i>
-</li>
-<li> [C21] <a href="https://arxiv.org/abs/2409.04367">Algorithm Configuration for Structured Pfaffian Settings</a>, AutoML 2025 (Hot-off-the-press track, also accepted to journal TMLR 2025)</br>
-        with <i>Maria-Florina Balcan</i> and <i>Anh Tuan Nguyen</i>
-</li>
-<li> [C20] <a href="https://arxiv.org/abs/2503.03184">PAC Learning with Improvements</a>, ICML 2025</br>
-        with <i>Idan Attias</i>, <i>Avrim Blum</i>, <i>Keziah Naggita</i>, <i>Donya Saless</i> and <i>Matthew Walter</i>
-</li>
-<li> [C19] <a href="https://arxiv.org/abs/2502.12937">Tuning Algorithmic and Architectural Hyperparameters in Graph-Based Semi-Supervised Learning with Provable Guarantees</a>, UAI 2025</br>
-        with <i>Ally Yalei Du</i> and <i>Eric Huang</i>
-<li> [C18] <a href="https://arxiv.org/abs/2501.02926">Offline-to-online hyperparameter transfer for stochastic bandits</a>, AAAI 2025 </br>
-        with <i>Arun Sai Suggala</i>
-</li>
-<li> [J3] <a href="https://arxiv.org/abs/2409.04367">Algorithm Configuration for Structured Pfaffian Settings</a>, TMLR 2025 </br>
-        with <i>Maria-Florina Balcan</i> and <i>Anh Tuan Nguyen</i>
-</li>
-<li> [A1] <a>Learning Accurate and Interpretable Decision Trees (Extended Abstract)</a>, IJCAI 2025 (Best Papers from Sister Conferences Track)</br>
-        with <i>Maria-Florina Balcan</i>
-</li>
-<li> [A2] <a>An Analysis of Robustness of Non-Lipschitz Networks (Extended Abstract)</a>, Workshop on Safe AI (UAI 2025)</br>
-with <i>Maria-Florina Balcan</i>, <i>Avrim Blum</i> and <i>Hongyang Zhang</i>
-</li>
-<li> [W13] <a>Distribution-dependent Generalization Bounds for Tuning Linear
-Regression Across Tasks.</a>, DiffCoALG: Differentiable Learning of Combinatorial Algorithms (NeurIPS
-2025).</br>
-   with <i>Maria-Florina Balcan</i> and <i>Saumya Goyal</i>
-</li>
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      line-height: 1.02;
+      margin: 0 0 14px;
+      letter-spacing: -0.04em;
+    }
 
-<li> [W12] <a>Algorithm design and sharper bounds for
-improving-bandits.</a>, OPT2025: 17th Annual Workshop on Optimization for Machine Learning (NeurIPS
-2025).</br>
-        with <i>Avrim Blum</i>, <i>Marten Garicano</i> and <i> Kavya Ravichandran</i>
-</li>
+    .tagline {
+      font-size: 1.2rem;
+      max-width: 760px;
+      margin: 0 0 12px;
+      color: #283441;
+    }
 
-<li> [W11] <a>Learning reliably under adversarial attacks, distribution shifts and strategic
-agents</a>, Reliable ML from Unreliable Data (NeurIPS 2025).</br>with <i>Maria-Florina Balcan</i>
-</li>
+    .intro {
+      max-width: 780px;
+      margin: 0;
+      color: var(--muted);
+    }
 
-<li> [W10] <a>On Learning Verifiers for Chain-of-Thought Reasoning</a>, Workshop on Reliable and Responsible Foundation Models (ICML 2025)</br>
-        with <i>Maria-Florina Balcan</i>, <i>Avrim Blum</i> and <i>Zhiyuan Li</i>
-</li>
-<li> [W9] <a>PAC Learning with Improvements</a>, 2nd Workshop on Social Choice and Learning Algorithms (IJCAI 2025) </br>
-        with <i>Idan Attias</i>, <i>Avrim Blum</i>, <i>Keziah Naggita</i>, <i>Donya Saless</i> and <i>Matthew Walter</i>
-</li>
-<li> [W8] <a>Learning how to step in gradient-based optimization: beyond convexity and smoothness</a>, </br>3rd
-Workshop on High-dimensional Learning Dynamics (ICML 2025)</br>
-</li>
-<li> [W7] <a>Gradient descent in presence of extreme flatness and steepness</a>, </br>Methods and Opportunities
-at Small Scale (ICML 2025)</br>
-</li>
+    .focus-box {
+      margin-top: 18px;
+      max-width: 770px;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      border-radius: 14px;
+      padding: 14px 16px;
+      color: #2c3e60;
+    }
 
-<li><b> 2024 </b></li>
-<li> [T1] CMU CSD PhD Thesis <a href="https://csd-web-01.andrew.cmu.edu/sites/default/files/phd-thesis/CMU-CS-24-120.pdf">Data-driven algorithm design and principled
-hyperparameter tuning in machine learning</a>
-</li>
-<li> [C17] <a href="https://www.jmlr.org/papers/v24/22-0410.html">An Analysis of Robustness of Non-Lipschitz Networks</a>, NeurIPS 2024 (Journal-to-conference track) </br>
-	with <i>Maria-Florina Balcan</i>, <i>Avrim Blum</i> and <i>Hongyang Zhang</i>
-</li>
+    .focus-box strong {
+      color: #21324d;
+    }
 
+    .headshot-wrap {
+      position: relative;
+      width: 250px;
+      height: 268px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-left: auto;
+    }
 
-<li> [C16]
-        <a href="https://openreview.net/forum?id=yW3tlSwusb">Accelerating ERM for data-driven algorithm design using output-sensitive techniques</a>, NeurIPS 2024 </br>
-	with <i>Maria-Florina Balcan</i> and <i>Christopher Seiler</i>
-</li>
+    .skyline {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -18px; /* moved slightly lower */
+      width: 250px;
+      opacity: 0.26;
+      z-index: 1;
+      pointer-events: none;
+    }
 
-<li> [C15]
-        <a href="https://arxiv.org/abs/2409.03129"> Subsidy for repair in component maintenance games</a>, EMI/PMC 2024 </br>
-        with <i>Maria-Florina Balcan</i> and <i>Matteo Pozzi</i>
-</li>
+    .skyline svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      fill: #708aa7;
+    }
 
-<li> [C14]
-	<a href="https://arxiv.org/abs/2405.15911">Learning Accurate and Interpretable Decision Trees</a>, UAI 2024 (<a style="color:red;">Outstanding student paper award</a>)</br>
-	with <i>Maria-Florina Balcan</i>
-</li>
+    .headshot {
+      position: relative;
+      z-index: 2;
+      width: 210px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--card);
+      box-shadow: 0 10px 28px rgba(31, 41, 51, 0.12);
+      background: var(--soft);
+    }
 
-<li> [C13]
-        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/29412">No Internal Regret with Non-convex Loss Functions</a>, AAAI 2024
-</li>
-<li> [W6]
-        <a>Theoretical Analyses of Hyperparameter Selection in Graph-Based Semi-Supervised Learning</a>, ICML 2024</br>Workshop on Geometry-grounded Representation Learning and Generative Modeling</br>
-        with <i>Ally Yalei Du</i> and <i>Eric Huang</i>
-</li>
+    section {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--border);
+    }
 
-<li> [W5]
-	<a> Accelerating data-driven algorithm design using output-sensitive techniques</a>, AAAI 2024</br> Workshop on Learnable Optimization</br>
-	with <i>Maria-Florina Balcan</i> and <i>Christopher Seiler</i>
-</li>
+    section:last-child {
+      border-bottom: none;
+    }
 
-<li> [W4]
-	<a>Shifting regret for tuning combinatorial algorithms with applications to clustering</a>, AAAI 2024</br> Workshop on Learnable Optimization</br>
-        with <i>Maria-Florina Balcan</i> and <i>Travis Dick</i>
-</li>
-<li><b> 2023 </b></li>
-<li> [C12]
-        <a href="https://openreview.net/pdf?id=8QGukmdAbh">New Bounds for Hyperparameter Tuning of Regression Problems Across Instances</a>, NeurIPS 2023</br>
-with <i>Maria-Florina Balcan</i> and <i>Anh Tuan Nguyen</i>
-</li>
+    h2 {
+      font-size: 1.8rem;
+      margin: 0 0 16px;
+      letter-spacing: -0.02em;
+    }
 
-<li> [C11]
-        <a href="https://arxiv.org/abs/2304.03370">Reliable Learning for Test-time Attacks and Distribution Shift</a>, NeurIPS 2023</br>
-with <i>Maria-Florina Balcan</i>, <i>Steve Hanneke</i> and <i>Rattana Pukdee</i>
-</li>
+    h3 {
+      margin: 0 0 6px;
+      font-size: 1.08rem;
+    }
 
-<li> [C10]
-        <a href="https://arxiv.org/abs/2306.07098">Efficiently Learning the Graph for Semi-supervised Learning</a>, UAI 2023</br>
-with <i>Maxwell Jones</i>
-</li>
+    .section-lead {
+      color: var(--muted);
+      max-width: 760px;
+      margin: -4px 0 20px;
+    }
 
-<li> [J2]
-	<a href="https://arxiv.org/pdf/2010.06154.pdf">An analysis of robustness of non-Lipschitz networks</a>, JMLR 2023 (earlier version in ICLR 2022</br> SRML workshop)</br>
-with <i>Maria-Florina Balcan</i>, <i>Avrim Blum</i> and <i>Hongyang Zhang</i>
-</li>
-<li><b> 2022 </b></li>
-<li> [C9]
-	<a href="https://arxiv.org/pdf/2207.10199.pdf">Provably tuning the ElasticNet across instances</a>, NeurIPS 2022 [<a href="https://blog.ml.cmu.edu/2024/04/12/how-to-regularize-your-regression/">blog post</a>] </br>
-with <i>Maria-Florina Balcan</i>, <i>Mikhail Khodak</i> and <i>Ameet Talwalkar</i>
-</li>
-<li> [C8]
-	<a href="https://arxiv.org/pdf/2203.04160.pdf">Robustly-reliable learners under poisoning attacks</a>, COLT 2022</br>
-with <i>Maria-Florina Balcan</i>, <i>Avrim Blum</i> and <i>Steve Hanneke</i>
-</li>
-<!--<li>
-        <a href="https://arxiv.org/pdf/2204.03569.pdf">Faster algorithms for learning to link, align sequences, and price two-part tariffs</a>, Pre-print</br>
-with <i>Maria-Florina Balcan</i> and <i>Christopher Seiler</i>
-</li>-->
-<li> [W3]
-	<a href="https://arxiv.org/pdf/2010.06154.pdf">On the Power of Abstention and Data-Driven Decision Making for Adversarial Robustness</a>, ICLR 2022 </br>Workshop on Socially Responsible Machine Learning (<a style="color:red;">Oral</a>)</br>
-with <i>Maria-Florina Balcan</i>, <i>Avrim Blum</i> and <i>Hongyang Zhang</i>
-</li>
-<li><b> 2021 </b></li>
-<li> [C7]
-	<a href="https://arxiv.org/pdf/2103.10547.pdf">Data driven semi-supervised learning</a>, NeurIPS 2021 (<a style="color:red;">Oral, <1%</a>)</br>
-with <i>Maria-Florina Balcan</i>
-</li>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
 
-<li> [C6]
-<a href="https://arxiv.org/pdf/2108.08770.pdf">Learning-to-learn non-convex piecewise-Lipschitz functions</a>, NeurIPS 2021</br>
-with <i>Maria-Florina Balcan, Mikhail Khodak, Ameet Talwalkar</i>
-</li>
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 2px 10px rgba(31, 41, 51, 0.04);
+    }
 
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
 
-<li> [W2]
-<a>Improved pronunciation prediction accuracy using morphology</a>, ACL SIG on Computational Morphology and Phonology (ACL 2021)</br>
-with <i>Saumya Sahai, Neha Chaudhari, Antoine Bruguier.</i>
-</li>
+    .news-list,
+    .paper-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-<li> [W1]
-<a>Predicting and Explaining French Grammatical Gender</a>, ACL Special Interest Group (SIG) on Typology (NAACL 2021)</br>
-with <i>Saumya Sahai</i>
-</li>
-<li><b> 2020 and before </b></li>
-				<li> [C5]
-						<a href="https://arxiv.org/pdf/1907.09137.pdf">Learning Piecewise Lipschitz Functions in Changing Environments</a>, 
-						AISTATS 2020 [<a href="shifted-regret-slides.pdf">slides</a>]</br>
-						with <i>Maria-Florina Balcan</i> and <i>Travis Dick</i>
-				</li>
-				<li> [C4]
-						<a href="https://www.isca-speech.org/archive/Interspeech_2019/pdfs/3207.pdf">Better morphology prediction for better speech systems</a>, Interspeech 2019</br>
-						with <i>Melissa Wilson</i> and <i>Antoine Bruguier</i>
-				</li>
-				<li> [C3]
-						<a href="https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1920.pdf">On Training and Evaluation of Grapheme-to-Phoneme Mappings with Limited Data</a>, Interspeech 2018
-				</li>
-				<li> [C2]
-					<a href="https://www.isca-speech.org/archive/Interspeech_2018/pdfs/2061.pdf">Dictionary Augmented Sequence-to-Sequence Neural Network for Grapheme to Phoneme Prediction</a>, Interspeech 2018</br>
-						with <i>Antoine Bruguier</i> and <i>Anton Bakhtin</i>
-				</li>
-				<li> [J1]
-						<a href="https://pdfs.semanticscholar.org/c20c/2628a2e4148ef53a4a8f6550cc451110b027.pdf">Some results on a class of mixed van der Waerden numbers</a>, Rocky Mountain J. Math. 2018</br>
-						with <i>Kaushik Maran</i>, <i>Sai Praneeth Reddy</i> and <i>Amitabha Tripathi</i>
-				</li>
-				<li> [C1]
-						<a href="http://proceedings.mlr.press/v37/sharma15.pdf">On greedy maximization of entropy</a>, ICML 2015</br>
-						with <i>Amit Deshpande</i> and <i>Ashish Kapoor</i>
-				</li>
-						<li style="list-style: none">
-								<p>&nbsp;&nbsp;&nbsp;</p>
-								<p>&nbsp;&nbsp;&nbsp;</p></li>
-			</ul>
-				
-			<div class="col-md-8 text text-center">
-			<p><a href="#" class="btn-custom">Home <span class="ion-ios-arrow-up"></span></a></p>
+    .news-list li {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 8px;
+      padding: 9px 0;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .news-list li:last-child {
+      border-bottom: none;
+    }
+
+    .star {
+      color: #a36f00;
+      font-weight: 800;
+    }
+
+    .paper {
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .paper:last-child {
+      border-bottom: none;
+    }
+
+    .paper-title {
+      font-weight: 750;
+      color: var(--text);
+    }
+
+    .authors {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .venue-row {
+      margin-top: 4px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .venue {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #4a3a00;
+      background: #fff3c4;
+      border: 1px solid #f2dc82;
+      border-radius: 999px;
+      padding: 2px 8px;
+    }
+
+    .award {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #34495e;
+      background: #edf2f7;
+      border: 1px solid #d7dee8;
+      border-radius: 999px;
+      padding: 2px 8px;
+    }
+
+    .year {
+      margin-top: 26px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      color: #2d3748;
+    }
+
+    .compact-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .compact-list li {
+      margin: 8px 0;
+    }
+
+    footer {
+      padding-top: 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding-top: 18px;
+      }
+
+      .topbar {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+
+      header.hero {
+        grid-template-columns: 1fr;
+      }
+
+      .headshot-wrap {
+        width: 210px;
+        height: 235px;
+        margin: 0 auto;
+      }
+
+      .headshot {
+        width: 180px;
+        height: 180px;
+      }
+
+      .skyline {
+        width: 210px;
+        bottom: -12px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+ .headshot-wrap {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.skyline-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -26px;
+  width: 300px;
+  max-width: none;
+  opacity: 0.42;
+  z-index: 1;
+  pointer-events: none;
+  filter: saturate(0.85) contrast(0.95);
+}
+
+.headshot {
+  position: relative;
+  z-index: 2;
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--card);
+  box-shadow: 0 10px 28px rgba(31, 41, 51, 0.12);
+  background: var(--soft);
+}
+
+.research-card h3 {
+  margin-bottom: 8px;
+}
+
+.research-card p {
+  margin-bottom: 12px;
+}
+
+.mini-paper-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  font-size: 0.94rem;
+}
+
+.mini-paper-list li {
+  padding: 8px 0;
+  border-top: 1px dashed var(--border);
+  color: var(--muted);
+}
+
+.mini-paper-list strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .headshot-wrap {
+    width: 230px;
+    height: 245px;
+    margin: 0 auto;
+  }
+
+  .headshot {
+    width: 180px;
+    height: 180px;
+  }
+
+  .skyline-img {
+    width: 300px;
+    bottom: -20px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <nav class="topbar" aria-label="Main navigation">
+      <a href="#news">Recent News</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Tutorials</a>
+      <a href="resume.pdf">CV</a>
+      <a href="#contact">Reach Me</a>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Learning Theory · LLM Verifiers · Reliable AI</p>
+        <h1>Dravyansh Sharma</h1>
+
+        <p class="tagline">
+          I study the theoretical foundations of learning systems that guide
+          LLM reasoning, design algorithms from data, and adapt to adversarial and strategic environments.
+        </p>
+
+        <p class="intro">
+          I am currently an <a href="https://www.ttic.edu/postdoc/">IDEAL Postdoctoral Researcher</a>
+          in Chicago (joint appointment at TTIC and Northwestern). I completed my PhD in the Computer Science Department at
+          Carnegie Mellon University, where I was fortunate to be advised by
+          <a href="https://www.cs.cmu.edu/~ninamf/">Maria-Florina “Nina” Balcan</a>.
+          My recent work focuses especially on post-training verification for LLM Chain-of-Thought reasoning,
+          including soundness-completeness trade-offs, process supervision, and the learnability
+          of verifier classes. I also work on data-driven algorithm design, principled hyperparameter tuning,
+          reliable learning, and learning with strategic agents.
+        </p>
+
+        <div class="focus-box">
+          <strong>Current focus:</strong> theoretical foundations for LLM verifiers and reasoning systems,
+          with an emphasis on online and PAC learnability; open problems in the growing field of machine learning for algorithms; learning in agentic settings.
         </div>
-	</div>
-		</div>
-</div>	</div>
-<div class="container" id="contact">
-                <div class="row justify-content-center mb-5 pb-2">
-            <h2 class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: &nbsp;&nbsp;&nbsp;</h2>
-E-mail: dravy [AT] ttic [DOT] edu</br>
-Office: 434, Toyota Technological Institute at Chicago, 6045 S Kenwood Ave, Chicago, IL 60637
+      </div>
+
+      <div class="headshot-wrap">
+  <img
+    class="skyline-img"
+    src="images/chicago-skyline.png"
+    alt=""
+    aria-hidden="true"
+  >
+  <img class="headshot" src="images/dravy-picture.jpg" alt="Dravyansh Sharma">
 </div>
-	</div>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
+    </header>
 
-  </body>
+    <main>
+      <section id="news">
+        <h2>Recent News and Highlights</h2>
+        <ul class="news-list">
+          <li>
+            <span class="star">★</span>
+            <span>
+              Organizing a new COLT 2026 tutorial,
+              <a href="https://dravy.ttic.edu/learning-augmented-colt26.html">Learning-Augmented Algorithms: From Classical Algorithms to LLMs</a>,
+              with Maryam Aliakbarpour, and Sandeep Silwal. Join us at COLT 2026!
+            </span>
+          </li>
+          <li>
+            <span class="star">★</span>
+            <span>
+              Organizing a new workshop <a href="law2026.html">Learning in an Agentic World: Foundations and Challenges</a>
+              at COLT 2026 on June 29 at San Diego, with Hedyeh Beyhaghi, Han Shao, and Avrim Blum.
+              Consider submitting to our Call for Abstracts!
+            </span>
+          </li>
+          <li>
+            <span class="star">★</span>
+            <span>
+              Organizing a workshop on <a href="lamp26.html">Learning-driven Algorithms and Machine-aided Proofs (LAMP)</a>
+              at TTIC on August 6–7, 2026, with Sandeep Silwal and Ellen Vitercik.
+              Consider submitting to our call for spotlights/posters/open problems!
+            </span>
+          </li>
+          <li>
+            <span class="star">★</span>
+            <span>
+              Presented a tutorial on
+              <a href="https://neurips.cc/virtual/2025/loc/san-diego/109594">New Frontiers of Hyperparameter Optimization</a>
+              at NeurIPS 2025, with Nina Balcan and Colin White.
+            </span>
+          </li>
+          <li>
+            <span class="star">★</span>
+            <span>
+              Taught a new course
+              <a href="https://home.ttic.edu/~avrim/MLforAD25/">TTIC 31290 - Machine Learning for Algorithm Design</a>
+              with Avrim Blum, Fall 2025.
+            </span>
+          </li>
+          <li>
+            <span class="star">★</span>
+            <span>
+              Service: Area Chair at ICML 2026, NeurIPS 2026, and NeurIPS 2025.
+            </span>
+          </li>
+          <li>
+            <span class="star">★</span>
+            <span>
+              Reviewer (recent): COLT 2026, JMLR 2026, TMLR 2026, UAI 2026, AISTATS 2026, SODA 2026, ITCS 2026, FOCS 2026.
+            </span>
+          </li>
+          <li>
+            <span class="star">★</span>
+            <span>
+              Three accepted papers at NeurIPS 2025, including one spotlight.
+            </span>
+          </li>
+          <li>
+            <span class="star">★</span>
+            <span>
+              Gave a tutorial at AutoML 2025,
+              “Limitations of State-of-the-Art and a New Principled Framework for HPO and Algorithm Selection”.
+            </span>
+          </li>
+          <li>
+            <span class="star">★</span>
+            <span>
+              Gave a tutorial at UAI 2025,
+              <a href="https://www.auai.org/uai2025/tutorials">Hyperparameter Optimization and Algorithm Selection: Practical Techniques, Theory, and New Frontiers</a>.
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="research">
+  <h2>Research</h2>
+  <p class="section-lead">
+    My work spans across learning theory, algorithms, and reliable AI,
+    with a particular recent emphasis on verifier-based reasoning systems and learning in
+    adaptive environments.
+  </p>
+
+  <div class="grid">
+    <article class="card research-card">
+      <h3>LLM verifiers and reasoning systems</h3>
+      <p>
+        I study the learnability of verifiers for LLM Chain-of-Thought reasoning, including
+        online and PAC guarantees, soundness-completeness trade-offs, 
+        and how learned verifiers can reliably guide step-by-step reasoning post-training via process supervision.
+      </p>
+      <ul class="mini-paper-list">
+        <li>
+          <strong><a href="https://arxiv.org/abs/2603.03538">Online Learnability of Chain-of-Thought Verifiers: Soundness and Completeness Trade-offs</a>.</strong>
+          Preprint (under submission), ICML 2026 AI4Math Workshop. With Maria-Florina Balcan, Avrim Blum, Kiriaki Fragkia, and Zhiyuan Li.
+        </li>
+        <li>
+          <strong><a href="https://arxiv.org/abs/2505.22650">On Learning Verifiers and Implications to Chain-of-Thought Reasoning</a>.</strong>
+          NeurIPS 2025. With Maria-Florina Balcan, Avrim Blum, and Zhiyuan Li.
+        </li>
+      </ul>
+    </article>
+
+
+    <article class="card research-card">
+      <h3>Data-driven algorithm design</h3>
+      <p>
+        I study how to learn algorithmic choices, heuristics, hyperparameters, and configurations
+        across problem instances, with guarantees for generalization, online learning, and
+        performance across tasks.
+      </p>
+      <ul class="mini-paper-list">
+        <li>
+          <strong><a href="https://arxiv.org/abs/2512.05084">Gradient Descent with Provably Tuned Learning-rate Schedules</a>.</strong>
+          AISTATS 2026.
+        </li>
+        <li>
+          <strong><a href="https://arxiv.org/abs/2405.15911">Learning Accurate and Interpretable Decision Trees</a>.</strong>
+          UAI 2024, <strong>Outstanding Student Paper Award</strong>. With Maria-Florina Balcan.
+        </li>
+        <li>
+          <strong><a href="https://arxiv.org/abs/2207.10199">Provably tuning the ElasticNet across instances</a>.</strong>
+          NeurIPS 2022. With Maria-Florina Balcan, Mikhail Khodak, and Ameet Talwalkar.
+        </li>
+        <li>
+          <strong><a href="https://arxiv.org/abs/2103.10547">Data Driven Semi-Supervised Learning</a>.</strong>
+          NeurIPS 2021, <strong>Oral</strong>. With Maria-Florina Balcan.
+        </li>
+      </ul>
+    </article>
+
+    <article class="card research-card">
+      <h3>Reliable learning</h3>
+      <p>
+        I work on learning algorithms with formal reliability guarantees under distribution shift,
+        test-time attacks, poisoning, abstention, and other adversarial or non-i.i.d. settings.
+      </p>
+      <ul class="mini-paper-list">
+        <li>
+          <strong><a href="https://arxiv.org/abs/2203.04160">Robustly-reliable learners under poisoning attacks</a>.</strong>
+          COLT 2022. With Maria-Florina Balcan, Avrim Blum, and Steve Hanneke.
+        </li>
+        <li>
+          <strong><a href="https://arxiv.org/abs/2304.03370">Reliable learning in challenging environments</a>.</strong>
+          NeurIPS 2023. With Maria-Florina Balcan, Steve Hanneke, and Rattana Pukdee.
+        </li>
+      </ul>
+    </article>
+
+
+    <article class="card research-card">
+      <h3>Learning with agents</h3>
+      <p>
+        I study learning in environments where data is produced by agents who may adapt,
+        improve, or strategically respond to deployed models and algorithms.
+      </p>
+      <ul class="mini-paper-list">
+        <li>
+          <strong><a href="https://arxiv.org/abs/2503.03184">PAC Learning with Improvements</a>.</strong>
+          ICML 2025. With Idan Attias, Avrim Blum, Keziah Naggita, Donya Saless, and Matthew Walter.
+        </li>
+        <li>
+          <strong><a href="https://arxiv.org/abs/2506.05252">Conservative classifiers do consistently well with improving agents: characterizing statistical and online learning</a>.</strong>
+          NeurIPS 2025 <strong>Spotlight</strong>. With Alec Sun.
+        </li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+
+      <section id="publications">
+        <h2>Publications</h2>
+
+        <h3 class="year">2026</h3>
+
+
+        <ul class="paper-list">
+        <ul class="paper-list">
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W14]</span>
+              Online Learnability of Chain-of-Thought Verifiers: Soundness and Completeness Trade-offs,
+              AI4Math, ICML 2026
+            </div>
+            <div class="authors">with Maria-Florina Balcan, Avrim Blum, Kiriaki Fragkia and Zhiyuan Li</div>
+          </li>
+        </ul>
+
+        <ul class="paper-list">
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C26]</span>
+              <a href="https://arxiv.org/abs/2511.10619">Algorithm Design and Stronger Guarantees for the Improving Multi-Armed Bandits Problem</a>,
+              UAI 2026
+            </div>
+            <div class="authors">with Avrim Blum, Marten Garicano and Kavya Ravichandran</div>
+          </li>
+        </ul>
+        <ul class="paper-list">
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C25]</span>
+              <a href="https://arxiv.org/abs/2512.05084">Gradient Descent with Provably Tuned Learning-rate Schedules</a>,
+              AISTATS 2026
+            </div>
+          </li>
+        </ul>
+	</ul>
+
+        <h3 class="year">2025</h3>
+        <ul class="paper-list">
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C24]</span>
+              <a href="https://arxiv.org/abs/2506.05252">Conservative classifiers do consistently well with improving agents: characterizing statistical and online learning</a>,
+              NeurIPS 2025 <span class="award">Spotlight</span>
+            </div>
+            <div class="authors">with Alec Sun</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C23]</span>
+              <a href="https://arxiv.org/abs/2505.22650">On Learning Verifiers and Implications to Chain-of-Thought Reasoning</a>,
+              NeurIPS 2025
+            </div>
+            <div class="authors">with Maria-Florina Balcan, Avrim Blum and Zhiyuan Li</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C22]</span>
+              <a href="https://arxiv.org/abs/2501.13734">Sample complexity of data-driven tuning of model hyperparameters in neural networks with structured parameter-dependent dual function</a>,
+              NeurIPS 2025
+            </div>
+            <div class="authors">with Maria-Florina Balcan and Anh Nguyen</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C21]</span>
+              <a href="https://arxiv.org/abs/2409.04367">Algorithm Configuration for Structured Pfaffian Settings</a>,
+              AutoML 2025, Hot-off-the-press track; also accepted to TMLR 2025
+            </div>
+            <div class="authors">with Maria-Florina Balcan and Anh Tuan Nguyen</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C20]</span>
+              <a href="https://arxiv.org/abs/2503.03184">PAC Learning with Improvements</a>,
+              ICML 2025
+            </div>
+            <div class="authors">with Idan Attias, Avrim Blum, Keziah Naggita, Donya Saless and Matthew Walter</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C19]</span>
+              <a href="https://arxiv.org/abs/2502.12937">Tuning Algorithmic and Architectural Hyperparameters in Graph-Based Semi-Supervised Learning with Provable Guarantees</a>,
+              UAI 2025
+            </div>
+            <div class="authors">with Ally Yalei Du and Eric Huang</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C18]</span>
+              <a href="https://arxiv.org/abs/2501.02926">Offline-to-online hyperparameter transfer for stochastic bandits</a>,
+              AAAI 2025
+            </div>
+            <div class="authors">with Arun Sai Suggala</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[J3]</span>
+              <a href="https://arxiv.org/abs/2409.04367">Algorithm Configuration for Structured Pfaffian Settings</a>,
+              TMLR 2025
+            </div>
+            <div class="authors">with Maria-Florina Balcan and Anh Tuan Nguyen</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[A1]</span>
+              Learning Accurate and Interpretable Decision Trees, Extended Abstract,
+              IJCAI 2025 Best Papers from Sister Conferences Track
+            </div>
+            <div class="authors">with Maria-Florina Balcan</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[A2]</span>
+              An Analysis of Robustness of Non-Lipschitz Networks, Extended Abstract,
+              Workshop on Safe AI, UAI 2025
+            </div>
+            <div class="authors">with Maria-Florina Balcan, Avrim Blum and Hongyang Zhang</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W13]</span>
+              Distribution-dependent Generalization Bounds for Tuning Linear Regression Across Tasks,
+              DiffCoALG: Differentiable Learning of Combinatorial Algorithms, NeurIPS 2025
+            </div>
+            <div class="authors">with Maria-Florina Balcan and Saumya Goyal</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W12]</span>
+              Algorithm design and sharper bounds for improving-bandits,
+              OPT2025: 17th Annual Workshop on Optimization for Machine Learning, NeurIPS 2025
+            </div>
+            <div class="authors">with Avrim Blum, Marten Garicano and Kavya Ravichandran</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W11]</span>
+              Learning reliably under adversarial attacks, distribution shifts and strategic agents,
+              Reliable ML from Unreliable Data, NeurIPS 2025
+            </div>
+            <div class="authors">with Maria-Florina Balcan</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W10]</span>
+              On Learning Verifiers for Chain-of-Thought Reasoning,
+              Workshop on Reliable and Responsible Foundation Models, ICML 2025
+            </div>
+            <div class="authors">with Maria-Florina Balcan, Avrim Blum and Zhiyuan Li</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W9]</span>
+              PAC Learning with Improvements,
+              2nd Workshop on Social Choice and Learning Algorithms, IJCAI 2025
+            </div>
+            <div class="authors">with Idan Attias, Avrim Blum, Keziah Naggita, Donya Saless and Matthew Walter</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W8]</span>
+              Learning how to step in gradient-based optimization: beyond convexity and smoothness,
+              3rd Workshop on High-dimensional Learning Dynamics, ICML 2025
+            </div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W7]</span>
+              Gradient descent in presence of extreme flatness and steepness,
+              Methods and Opportunities at Small Scale, ICML 2025
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="year">2024</h3>
+        <ul class="paper-list">
+          <li class="paper">
+            <div>
+              <span class="paper-title">[T1]</span>
+              CMU CSD PhD Thesis:
+              <a href="https://csd-web-01.andrew.cmu.edu/sites/default/files/phd-thesis/CMU-CS-24-120.pdf">Data-driven algorithm design and principled hyperparameter tuning in machine learning</a>
+            </div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C17]</span>
+              <a href="https://www.jmlr.org/papers/v24/22-0410.html">An Analysis of Robustness of Non-Lipschitz Networks</a>,
+              NeurIPS 2024, Journal-to-conference track
+            </div>
+            <div class="authors">with Maria-Florina Balcan, Avrim Blum and Hongyang Zhang</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C16]</span>
+              <a href="https://openreview.net/forum?id=yW3tlSwusb">Accelerating ERM for data-driven algorithm design using output-sensitive techniques</a>,
+              NeurIPS 2024
+            </div>
+            <div class="authors">with Maria-Florina Balcan and Christopher Seiler</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C15]</span>
+              <a href="https://arxiv.org/abs/2409.03129">Subsidy for repair in component maintenance games</a>,
+              EMI/PMC 2024
+            </div>
+            <div class="authors">with Maria-Florina Balcan and Matteo Pozzi</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C14]</span>
+              <a href="https://arxiv.org/abs/2405.15911">Learning Accurate and Interpretable Decision Trees</a>,
+              UAI 2024
+              <span class="award">Outstanding Student Paper Award</span>
+            </div>
+            <div class="authors">with Maria-Florina Balcan</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C13]</span>
+              <a href="https://ojs.aaai.org/index.php/AAAI/article/view/29412">No Internal Regret with Non-convex Loss Functions</a>,
+              AAAI 2024
+            </div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W6]</span>
+              Theoretical Analyses of Hyperparameter Selection in Graph-Based Semi-Supervised Learning,
+              ICML 2024 Workshop on Geometry-grounded Representation Learning and Generative Modeling
+            </div>
+            <div class="authors">with Ally Yalei Du and Eric Huang</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W5]</span>
+              Accelerating data-driven algorithm design using output-sensitive techniques,
+              AAAI 2024 Workshop on Learnable Optimization
+            </div>
+            <div class="authors">with Maria-Florina Balcan and Christopher Seiler</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W4]</span>
+              Shifting regret for tuning combinatorial algorithms with applications to clustering,
+              AAAI 2024 Workshop on Learnable Optimization
+            </div>
+            <div class="authors">with Maria-Florina Balcan and Travis Dick</div>
+          </li>
+        </ul>
+
+        <h3 class="year">2023</h3>
+        <ul class="paper-list">
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C12]</span>
+              <a href="https://openreview.net/pdf?id=8QGukmdAbh">New Bounds for Hyperparameter Tuning of Regression Problems Across Instances</a>,
+              NeurIPS 2023
+            </div>
+            <div class="authors">with Maria-Florina Balcan and Anh Tuan Nguyen</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C11]</span>
+              <a href="https://arxiv.org/abs/2304.03370">Reliable learning in challenging environments</a>,
+              NeurIPS 2023
+            </div>
+            <div class="authors">with Maria-Florina Balcan, Steve Hanneke and Rattana Pukdee</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C10]</span>
+              <a href="https://arxiv.org/abs/2306.07098">Efficiently Learning the Graph for Semi-supervised Learning</a>,
+              UAI 2023
+            </div>
+            <div class="authors">with Maxwell Jones</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[J2]</span>
+              <a href="https://arxiv.org/pdf/2010.06154">An analysis of robustness of non-Lipschitz networks</a>,
+              JMLR 2023; earlier version in ICLR 2022 SRML workshop
+            </div>
+            <div class="authors">with Maria-Florina Balcan, Avrim Blum and Hongyang Zhang</div>
+          </li>
+        </ul>
+
+        <h3 class="year">2022</h3>
+        <ul class="paper-list">
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C9]</span>
+              <a href="https://arxiv.org/pdf/2207.10199">Provably tuning the ElasticNet across instances</a>,
+              NeurIPS 2022
+              [<a href="https://blog.ml.cmu.edu/2024/04/12/how-to-regularize-your-regression/">blog post</a>]
+            </div>
+            <div class="authors">with Maria-Florina Balcan, Mikhail Khodak and Ameet Talwalkar</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C8]</span>
+              <a href="https://arxiv.org/pdf/2203.04160">Robustly-reliable learners under poisoning attacks</a>,
+              COLT 2022
+            </div>
+            <div class="authors">with Maria-Florina Balcan, Avrim Blum and Steve Hanneke</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W3]</span>
+              <a href="https://arxiv.org/pdf/2010.06154">On the Power of Abstention and Data-Driven Decision Making for Adversarial Robustness</a>,
+              ICLR 2022 Workshop on Socially Responsible Machine Learning
+              <span class="award">Oral</span>
+            </div>
+            <div class="authors">with Maria-Florina Balcan, Avrim Blum and Hongyang Zhang</div>
+          </li>
+        </ul>
+
+        <h3 class="year">2021</h3>
+        <ul class="paper-list">
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C7]</span>
+              <a href="https://arxiv.org/pdf/2103.10547">Data driven semi-supervised learning</a>,
+              NeurIPS 2021
+              <span class="award">Oral, &lt;1%</span>
+            </div>
+            <div class="authors">with Maria-Florina Balcan</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C6]</span>
+              <a href="https://arxiv.org/pdf/2108.08770">Learning-to-learn non-convex piecewise-Lipschitz functions</a>,
+              NeurIPS 2021
+            </div>
+            <div class="authors">with Maria-Florina Balcan, Mikhail Khodak, Ameet Talwalkar</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W2]</span>
+              Improved pronunciation prediction accuracy using morphology,
+              ACL SIG on Computational Morphology and Phonology, ACL 2021
+            </div>
+            <div class="authors">with Saumya Sahai, Neha Chaudhari, Antoine Bruguier</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[W1]</span>
+              Predicting and Explaining French Grammatical Gender,
+              ACL Special Interest Group on Typology, NAACL 2021
+            </div>
+            <div class="authors">with Saumya Sahai</div>
+          </li>
+        </ul>
+
+        <h3 class="year">2020 and before</h3>
+        <ul class="paper-list">
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C5]</span>
+              <a href="https://arxiv.org/pdf/1907.09137">Learning Piecewise Lipschitz Functions in Changing Environments</a>,
+              AISTATS 2020
+              [<a href="shifted-regret-slides.pdf">slides</a>]
+            </div>
+            <div class="authors">with Maria-Florina Balcan and Travis Dick</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C4]</span>
+              <a href="https://www.isca-speech.org/archive_v0/Interspeech_2019/pdfs/2372.pdf">Better morphology prediction for better speech systems</a>,
+              Interspeech 2019
+            </div>
+            <div class="authors">with Melissa Wilson and Antoine Bruguier</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C3]</span>
+              <a href="https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1815.pdf">On Training and Evaluation of Grapheme-to-Phoneme Mappings with Limited Data</a>,
+              Interspeech 2018
+            </div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C2]</span>
+              <a href="https://www.isca-speech.org/archive/Interspeech_2018/pdfs/2294.pdf">Dictionary Augmented Sequence-to-Sequence Neural Network for Grapheme to Phoneme Prediction</a>,
+              Interspeech 2018
+            </div>
+            <div class="authors">with Antoine Bruguier and Anton Bakhtin</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[J1]</span>
+              <a href="https://www.semanticscholar.org/paper/Some-results-on-a-class-of-mixed-van-der-Waerden-Maran-Reddy/e1595aa60efef43aa0bea8ba0e07dc65ca2fbbba?p2df">Some results on a class of mixed van der Waerden numbers</a>,
+              Rocky Mountain J. Math. 2018
+            </div>
+            <div class="authors">with Kaushik Maran, Sai Praneeth Reddy and Amitabha Tripathi</div>
+          </li>
+
+          <li class="paper">
+            <div>
+              <span class="paper-title">[C1]</span>
+              <a href="https://proceedings.mlr.press/v37/sharma15.pdf">On greedy maximization of entropy</a>,
+              ICML 2015
+            </div>
+            <div class="authors">with Amit Deshpande and Ashish Kapoor</div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="teaching">
+        <h2>Tutorials and Teaching</h2>
+        <ul class="compact-list">
+          <li>
+            COLT 2026 tutorial:
+            <a href="https://dravy.ttic.edu/learning-augmented-colt26.html">Learning-Augmented Algorithms: From Classical Algorithms to LLMs</a>,
+            with Maria-Florina Balcan, Ali Vakilian, Maryam Aliakbarpour, and Sandeep Silwal.
+          </li>
+          <li>
+            <a href="https://home.ttic.edu/~avrim/MLforAD25/">TTIC 31290: Machine Learning for Algorithm Design</a>,
+            with Avrim Blum, Fall 2025.
+          </li>
+          <li>
+            NeurIPS 2025 tutorial:
+            <em>New Frontiers of Hyperparameter Optimization</em>,
+            with Nina Balcan and Colin White.
+          </li>
+          <li>
+            AutoML 2025 tutorial:
+            <em>Limitations of State-of-the-Art and a New Principled Framework for HPO and Algorithm Selection</em>.
+          </li>
+          <li>
+            UAI 2025 tutorial:
+            <em>Hyperparameter Optimization and Algorithm Selection: Practical Techniques, Theory, and New Frontiers</em>.
+          </li>
+        </ul>
+      </section>
+
+      <section id="workshops">
+        <h2>Workshops and Service</h2>
+        <div class="grid">
+          <article class="card">
+            <h3><a href="law2026.html">LAW at COLT 2026</a></h3>
+            <p>
+              Learning in an Agentic World: Foundations and Challenges.
+              June 29, 2026, San Diego.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3><a href="lamp26.html">LAMP at TTIC</a></h3>
+            <p>
+              Learning-driven Algorithms and Machine-aided Proofs.
+              August 6–7, 2026, TTIC.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Area chair</h3>
+            <p>
+              2026: ICML 2026, NeurIPS 2026</br>
+	      2025: NeurIPS 2025.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Reviewer</h3>
+            <p>
+              2026: COLT, JMLR, TMLR, UAI, AISTATS, SODA, ITCS, FOCS.</br>
+	      Before 2026 (other venues): ICML, NeurIPS, AAAI, ALT, TPAMI, SIMODS, Machine Learning.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Reach Me</h2>
+        <p>
+          <strong>Email:</strong> dravy [AT] ttic [DOT] edu<br>
+          <strong>Office:</strong> 434, Toyota Technological Institute at Chicago,
+          6045 S Kenwood Ave, Chicago, IL 60637
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Last updated: June 2026.</p>
+    </footer>
+  </div>
+</body>
 </html>
