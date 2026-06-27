@@ -333,6 +333,39 @@
       margin-bottom: 0.45rem;
     }
 
+    .talk-entry {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.talk-speaker {
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.talk-title {
+  font-weight: 700;
+  color: #26364f;
+}
+
+.talk-abstract {
+  margin-top: 0.4rem;
+}
+
+.talk-abstract summary {
+  cursor: pointer;
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 0.94rem;
+}
+
+.talk-abstract p {
+  margin-top: 0.55rem;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
     .tagline {
       display: inline-block;
       color: var(--teal);
@@ -560,7 +593,7 @@
 
     <section id="speakers">
       <span class="tagline">Speakers</span>
-      <h2>Keynote Speakers (Tentative)</h2>
+      <h2>Keynote Speakers</h2>
       <div class="grid">
         <div class="card person-card">
           <img class="person-photo" src="images/speakers/nina.jpg" alt="Maria-Florina Balcan" />
@@ -592,25 +625,64 @@
       <table class="schedule-table">
         <thead>
           <tr>
-            <th>Duration</th>
+            <th>Time</th>
             <th>Activity</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>30 minutes</td>
-            <td>Research Talk 1</td>
+            <td>8:30-8:40</td>
+            <td>Welcome remarks</td>
           </tr>
           <tr>
-            <td>30 minutes</td>
-            <td>Research Talk 2</td>
-          </tr>
+  <td>8:40-9:10</td>
+  <td>
+    <div class="talk-entry">
+      <div class="talk-speaker">Maria-Florina Balcan</div>
+      <div class="talk-title">Learning Verifiers for Chain of Thought Reasoning</div>
+      <details class="talk-abstract">
+        <summary>Abstract</summary>
+        <p>
+          Large language models (LLMs) with chain-of-thought generation have demonstrated tremendous potential for solving complex reasoning and planning tasks across many domains. However, the outputs of current LLMs are not always fully reliable or aligned with human preferences, making effective verification essential. In this talk, I will present new frameworks and algorithms for learning verifiers that detect when an LLM’s reasoning goes off track. These learned verifiers help mitigate catastrophic failure modes of LLMs (e.g., they can appear convincing while being wrong) and, more broadly, improve the reliability and reasoning capabilities of modern LLMs.
+        </p>
+      </details>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>9:10-9:40</td>
+  <td>
+    <div class="talk-entry">
+      <div class="talk-speaker">Yian Ma</div>
+      <div class="talk-title">On the rationality of multi-agent learning</div>
+      <details class="talk-abstract">
+        <summary>Abstract</summary>
+        <p>
+          I will discuss an interesting phenomena in multi-agent learning, that the mixed Nash equilibria are uniformly stable if and only if they are collectively rational. This justifies the effusive use of multi-agent learning systems and resolves the 'as if' rationality problem in classical economics. If partial knowledge (about utility or algorithm) can be obtained about the opponents, then the agent can steer towards their favorable Stackelberg equilibria, surpassing Nash outcomes.
+        </p>
+      </details>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>9:40-10:10</td>
+  <td>
+    <div class="talk-entry">
+      <div class="talk-speaker">Nika Haghtalab</div>
+      <div class="talk-title">Distortion of AI Alignment: Does Preference Optimization optimize for preferences? [tentative]</div>
+      <details class="talk-abstract">
+        <summary>Abstract</summary>
+        <p>
+          After pre-training, large language models are aligned with human preferences based on pairwise comparisons. State-of-the-art alignment methods (such as PPO-based RLHF and DPO) are built on the assumption of aligning with a single preference model, despite being deployed in settings where users have diverse preferences. As a result, it is not even clear that these alignment methods produce models that satisfy users on average — a minimal requirement. Drawing on social choice theory and modeling users’ comparisons through individual Bradley-Terry (BT) models, we introduce an alignment method’s distortion: the worst-case ratio between the optimal achievable average utility, and the average utility of the learned policy. The notion of distortion helps draw sharp distinctions between alignment methods: Nash Learning from Human Feedback achieves the minimax optimal distortion of a constant. We also give a fine-grained understanding of the distortion of RLHF (PPO or DPO based) which can suffer unbounded distortion in the worst-case. 
+        </p>
+      </details>
+    </div>
+  </td>
+</tr>
           <tr>
-            <td>30 minutes</td>
-            <td>Research Talk 3</td>
-          </tr>
-          <tr>
-            <td>60 minutes</td>
+            <td>12:30-14:00</td>
             <td>Poster Session</td>
           </tr>
         </tbody>
@@ -811,6 +883,16 @@
 <div class="abstract-body">
 <a class="abstract-pdf-link" href="law_submissions/Abstract-1.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
 <iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-1.pdf" title="Abstract-1.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-1.pdf</iframe>
+</div>
+</details>
+<details class="abstract-card">
+<summary>
+<span class="abstract-title">Learning to Price with Persuasion</span>
+<span class="abstract-authors">Maria-Florina Balcan; Tejas Pagare; Karan Singh</span>
+</summary>
+<div class="abstract-body">
+<a class="abstract-pdf-link" href="law_submissions/Abstract-17.pdf" rel="noopener" target="_blank">Open submitted PDF in a new tab</a>
+<iframe class="abstract-pdf-frame" loading="lazy" src="law_submissions/Abstract-17.pdf" title="Abstract-17.pdf">Your browser does not support embedded PDFs. Open the PDF here: law_submissions/Abstract-17.pdf</iframe>
 </div>
 </details>
 </div>
