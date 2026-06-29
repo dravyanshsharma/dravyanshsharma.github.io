@@ -90,11 +90,44 @@
       <p class="section-kicker">Schedule</p>
       <h2>Tutorial schedule</h2>
       <div class="timeline">
-        <div class="slot"><time>10:30-10:54</time><div><strong>Maria-Florina Balcan (invited)</strong><p>Data-driven transfer clustering</p></div></div>
-        <div class="slot"><time>10:54-11:18</time><div><strong>Ali Vakilian (invited)</strong><p>Beating Classical Streaming Barriers with Noisy Predictions</p></div></div>
-        <div class="slot"><time>11:18-11:42</time><div><strong>Maryam Aliakbarpour</strong><p>Leveraging Predictions for Efficient Hypothesis Testing of Discrete Distributions</p></div></div>
-        <div class="slot"><time>11:42-12:06</time><div><strong>Dravyansh Sharma</strong><p>Principled hyperparameter tuning in core ML algorithms</p></div></div>
-        <div class="slot"><time>12:06-12:30</time><div><strong>Sandeep Silwal</strong><p>Strong vs weak signals in similarity computations</p></div></div>
+        <div class="slot"><time>10:30-10:54</time><div><strong>Maria-Florina Balcan (invited)</strong><p>Data-driven clustering</p>
+<details class="talk-details">
+      <summary>Abstract</summary>
+      <p>
+        I will present data-driven clustering as a concrete case study of machine learning for algorithm design. Traditional approaches to designing and analyzing clustering algorithms focus on one shot clustering, where the goal is to optimize performance on a one-time dataset well. Unfortunately, from a theoretical standpoint, this formulation faces major impossibility results. First, in most applications it is unclear which notion of similarity or objective function will recover a good clustering for a given dataset. Second, even in cases where the similarity function and the objectives are naturally specified, optimally solving the underlying combinatorial problem is typically intractable.
+
+</br></br>
+In this talk, I will describe a lifelong transfer clustering approach to address these challenges. Motivated by the fact that in many settings, we often need to solve not only one, but a stream of related clustering problems from a given application domain, we consider algorithms that adaptively learn to cluster.  We provide formal guarantees on the learnability of these clustering procedures.
+      </p>
+    </details>
+</div>
+</div>
+        <div class="slot"><time>10:54-11:18</time><div><strong>Ali Vakilian (invited)</strong><p>Beating Classical Streaming Barriers with Noisy Predictions</p>
+<details class="talk-details">
+      <summary>Abstract</summary>
+      <p>Learning-augmented algorithms equip classical methods with machine-learned predictions about their input, aiming to surpass worst-case limits when predictions are good (consistency) while never doing worse when they fail (robustness). I study this paradigm in the streaming model, where provable lower bounds make the payoff especially sharp. I trace three high-level forms of prediction: learned oracles, learned sketching, and $\epsilon$-accurate predictions. Throughout, I highlight openings for learning theory: what makes such predictions learnable, how little accuracy suffices, and the cost of the predictor itself.
+      </p>
+    </details></div></div>
+        <div class="slot"><time>11:18-11:42</time><div><strong>Maryam Aliakbarpour</strong><p>Leveraging Predictions for Efficient Hypothesis Testing of Discrete Distributions</p>
+<details class="talk-details">
+      <summary>Abstract</summary>
+      <p>
+Prior knowledge—whether from historical data, domain expertise, or predictive models—can enhance statistical inference by reducing sample complexity. We introduce a general framework for leveraging such predictions and apply it to hypothesis testing for discrete distributions. In the standard setting, optimal sample complexity bounds are known for identity, closeness, and uniformity testing. We show that access to a predicted distribution can reduce the required samples, with gains determined by its total variation distance from the true distribution. Our algorithms are adaptive, adjusting to prediction accuracy without prior calibration, and robust, never exceeding the standard sample complexity when predictions are uninformative. We establish information-theoretic lower bounds confirming optimality and present experimental results demonstrating significant practical improvements.</p>
+    </details>
+</div></div>
+        <div class="slot"><time>11:42-12:06</time><div><strong>Dravyansh Sharma</strong><p>Principled hyperparameter tuning in core ML algorithms</p>
+<details class="talk-details">
+      <summary>Abstract</summary>
+      <p>Modern machine learning algorithms depend critically on hyperparameters: regularization strengths, step sizes, interpolation parameters, and many others. These choices can dramatically affect performance, yet they are often selected by grid search, cross-validation, or hand-designed heuristics with limited theoretical guidance. This talk will present a learning-theoretic view of hyperparameter tuning as an instance of data-driven algorithm design: given samples from an application domain, how can we tune an algorithmic family so that its empirical performance generalizes to future instances? We will see applications to several fundamental ML algorithms including regularized regression, decision trees, clustering, and neural networks.
+</p>
+    </details>
+</div></div>
+        <div class="slot"><time>12:06-12:30</time><div><strong>Sandeep Silwal</strong><p>Strong vs weak signals in similarity computations</p>
+<details class="talk-details">
+      <summary>Abstract</summary>
+      <p>TBD
+</p>
+    </details></div></div>
       </div>
       <p class="note">Location: William D Evans Boat (Exit the lobby toward the waterfront/marina. Walk about 3–5 minutes along the bay. Walk on to the dock towards the William D. Evans Sternwheeler).</p>
     </section>

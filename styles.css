@@ -185,3 +185,21 @@ li { margin: 0 0 12px; color: var(--muted); }
 .speaker-photo-link { display: inline-block; margin-bottom: 1rem; } 
 .speaker-photo { width: 160px; height: 160px; object-fit: cover; object-position: center; border-radius: 50%; display: block; margin: 0 auto; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.14); border: 3px solid #fff; background: #f8fafc; } 
 .speaker h3 { margin-top: 0.4rem; } @media (max-width: 640px) { .speaker-photo { width: 130px; height: 130px; } }
+
+.talk-details {
+  margin-top: 0.55rem;
+  max-width: 850px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #4b5563;
+}
+
+.talk-details summary {
+  cursor: pointer;
+  font-weight: 650;
+  color: #1f2937;
+}
+
+.talk-details p {
+  margin-top: 0.5rem;
+}
