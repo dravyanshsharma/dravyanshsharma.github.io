@@ -215,11 +215,56 @@
     }
 
     .speaker-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      margin-top: 16px;
-    }
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 2rem 1.25rem;
+  align-items: start;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+}
+
+.speaker-grid .person-card {
+  min-width: 0;
+  text-align: center;
+}
+
+.speaker-grid .person-photo {
+  width: min(100%, 170px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 0.9rem;
+}
+
+.speaker-grid h3 {
+  margin: 0.4rem 0 0.25rem;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.speaker-grid p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 1000px) {
+  .speaker-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .speaker-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 430px) {
+  .speaker-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
     .card h3 {
       margin: 0 0 6px;
@@ -314,6 +359,150 @@
         white-space: normal;
       }
     }
+
+.schedule-section {
+  background: #f7f8fa;
+}
+
+.schedule-section .section-inner {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.schedule-note {
+  max-width: 760px;
+  margin: 0.5rem auto 2.5rem;
+  text-align: center;
+  color: #555;
+  line-height: 1.6;
+}
+
+.schedule-day {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.schedule-day:last-child {
+  margin-bottom: 0;
+}
+
+.schedule-day h3 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.schedule-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 0.95rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e4e7eb;
+}
+
+.schedule-table th:first-child,
+.schedule-table td:first-child {
+  width: 145px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.schedule-table thead th {
+  background: #eceff3;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.schedule-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.schedule-talk td:last-child {
+  border-left: 4px solid currentColor;
+}
+
+.schedule-session {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.schedule-break,
+.schedule-logistics {
+  color: #555;
+}
+
+.schedule-subitems {
+  list-style: none;
+  margin: 0.9rem 0 0;
+  padding: 0;
+}
+
+.schedule-subitems li {
+  display: grid;
+  grid-template-columns: 6.75rem minmax(0, 1fr);
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.8rem 0;
+  border-top: 1px solid #e4e7eb;
+}
+
+.spotlight-time {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.spotlight-details {
+  min-width: 0;
+}
+
+.spotlight-details strong {
+  display: block;
+  line-height: 1.35;
+}
+
+.talk-title {
+  display: block;
+  margin-top: 0.15rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 600px) {
+  .schedule-section .section-inner {
+    width: min(100% - 1rem, 1100px);
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 0.75rem;
+  }
+
+  .schedule-table th:first-child,
+  .schedule-table td:first-child {
+    width: 105px;
+    white-space: normal;
+  }
+
+  .schedule-subitems li {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .spotlight-time {
+    display: block;
+  }
+}
   </style>
 </head>
 <body>
@@ -341,6 +530,7 @@
       <a href="#about">About</a>
       <a href="#organizers">Organizers</a>
       <a href="#speakers">Speakers</a>
+      <a href="#schedule">Schedule</a>
       <a href="#register">Register</a>
       <a href="#cfp">Call for Submissions</a>
       <a href="#contact">Contact</a>
@@ -424,7 +614,7 @@
     <section id="speakers" class="section">
       <h2>Speakers (tentative)</h2>
       <p>
-        We have an exciting line-up of speakers on this timely research topic! The following researchers have confired interest (subject to the schedules working out).
+        We have an exciting line-up of speakers on this timely research topic!
       </p>
 
       <div class="speaker-grid">
@@ -455,9 +645,9 @@
           <p>New York University</p>
         </div>
         <div class="card">
-          <img class="person-photo" src="https://www.eecs.mit.edu/sites/default/files/person-photos/indyk_0.jpg" alt="Piotr Indyk" />
-          <h3>Piotr Indyk</h3>
-          <p>MIT</p>
+          <img class="person-photo" src="images/speakers/mohammad.jpg" alt="Piotr Indyk" />
+          <h3>MohammadTaghi Hajiaghayi</h3>
+          <p>University of Maryland</p>
         </div>
    <div class="card">
           <img class="person-photo" src="images/speakers/misha.png" alt="Misha Khodak" />
@@ -487,6 +677,290 @@
         </div>
       </div>
     </section>
+
+
+<section id="schedule" class="section schedule-section">
+  <div class="section-inner">
+    <h2>Tentative Schedule</h2>
+
+    <p class="schedule-note">
+      All times are in Central Time. The schedule is tentative and may
+      change as talk titles and participant details are finalized.
+    </p>
+
+    <!-- Thursday -->
+    <div class="schedule-day">
+      <h3>Thursday, August 6</h3>
+
+      <div class="schedule-table-wrapper">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col">Session</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="schedule-logistics">
+              <td>8:45–9:10</td>
+              <td>Registration, coffee, and breakfast</td>
+            </tr>
+
+            <tr>
+              <td>9:10–9:15</td>
+              <td><strong>Welcome and workshop overview</strong></td>
+            </tr>
+
+            <tr class="schedule-talk">
+              <td>9:15–10:00</td>
+              <td>
+                <strong>Invited Talk 1</strong><br>
+                Maria-Florina “Nina” Balcan
+              </td>
+            </tr>
+
+            <tr class="schedule-talk">
+              <td>10:00–10:45</td>
+              <td>
+                <strong>Invited Talk 2</strong><br>
+                MohammadTaghi Hajiaghayi
+              </td>
+            </tr>
+
+            <tr class="schedule-break">
+              <td>10:45–11:00</td>
+              <td>Coffee break</td>
+            </tr>
+
+            <tr class="schedule-talk">
+              <td>11:00–11:45</td>
+              <td>
+                <strong>Invited Talk 3</strong><br>
+                Anupam Gupta
+              </td>
+            </tr>
+
+            <tr class="schedule-talk">
+              <td>11:45–12:30</td>
+              <td>
+                <strong>Invited Talk 4</strong><br>
+                Misha Khodak
+              </td>
+            </tr>
+
+            <tr class="schedule-break">
+              <td>12:30–1:30</td>
+              <td>Lunch</td>
+            </tr>
+
+            <tr class="schedule-session">
+              <td>1:30–2:30</td>
+              <td>
+                <strong>Spotlight Session I</strong>
+
+                <ul class="schedule-subitems">
+                  <li>
+                    <span class="spotlight-time">1:30–1:45</span>
+                    <div class="spotlight-details">
+                      <strong>Mahdi Haghifam</strong>
+                      <span class="talk-title">
+                        Adaptive Generate-Rank-Verify: Inference-Time Search
+                        with Costly Verification
+                      </span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <span class="spotlight-time">1:45–2:00</span>
+                    <div class="spotlight-details">
+                      <strong>Nicolas Christianson</strong>
+                      <span class="talk-title">
+                        Prediction-Specific Design of Learning-Augmented
+                        Algorithms
+                      </span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <span class="spotlight-time">2:00–2:15</span>
+                    <div class="spotlight-details">
+                      <strong>Sid Prasad</strong>
+                      <span class="talk-title">
+                        In-Context Credit Assignment via the Core
+                      </span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <span class="spotlight-time">2:15–2:30</span>
+                    <div class="spotlight-details">
+                      <strong>Daniil Dmitriev</strong>
+                      <span class="talk-title">
+                        Learning in an Echo Chamber: Online Learning with
+                        Replay Adversary
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr class="schedule-talk">
+              <td>2:30–3:15</td>
+              <td>
+                <strong>Invited Talk 5</strong><br>
+                Debmalya Panigrahi
+              </td>
+            </tr>
+
+            <tr class="schedule-break">
+              <td>3:15–3:30</td>
+              <td>Coffee and poster setup</td>
+            </tr>
+
+            <tr class="schedule-session">
+              <td>3:30–5:00</td>
+              <td><strong>Poster session</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Friday -->
+    <div class="schedule-day">
+      <h3>Friday, August 7</h3>
+
+      <div class="schedule-table-wrapper">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col">Session</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="schedule-logistics">
+              <td>9:00–9:30</td>
+              <td>Coffee and breakfast</td>
+            </tr>
+
+            <tr class="schedule-talk">
+              <td>9:30–10:15</td>
+              <td>
+                <strong>Invited Talk 6</strong><br>
+                Shay Moran
+              </td>
+            </tr>
+
+            <tr class="schedule-talk">
+              <td>10:15–11:00</td>
+              <td>
+                <strong>Invited Talk 7</strong><br>
+                Yusu Wang
+              </td>
+            </tr>
+
+            <tr class="schedule-break">
+              <td>11:00–11:15</td>
+              <td>Coffee break</td>
+            </tr>
+
+            <tr class="schedule-talk">
+              <td>11:15–12:00</td>
+              <td>
+                <strong>Invited Talk 8</strong><br>
+                Dylan Foster
+              </td>
+            </tr>
+
+            <tr class="schedule-break">
+              <td>12:00–1:00</td>
+              <td>Lunch</td>
+            </tr>
+
+            <tr class="schedule-talk">
+              <td>1:00–1:45</td>
+              <td>
+                <strong>Invited Talk 9</strong><br>
+                Vincent Cohen-Addad
+              </td>
+            </tr>
+
+            <tr class="schedule-talk">
+              <td>1:45–2:30</td>
+              <td>
+                <strong>Invited Talk 10</strong><br>
+                Hedyeh Beyhaghi
+              </td>
+            </tr>
+
+            <tr class="schedule-session">
+              <td>2:30–3:30</td>
+              <td>
+                <strong>Spotlight Session II</strong>
+
+                <ul class="schedule-subitems">
+                  <li>
+                    <span class="spotlight-time">2:30–2:45</span>
+                    <div class="spotlight-details">
+                      <strong>Nirmit Joshi</strong>
+                      <span class="talk-title">
+                        Learning to Think from Multiple Thinkers
+                      </span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <span class="spotlight-time">2:45–3:00</span>
+                    <div class="spotlight-details">
+                      <strong>Alec Sun</strong>
+                      <span class="talk-title">
+                        Conservative Classifiers Do Consistently Well with
+                        Improving Agents: Characterizing Statistical and
+                        Online Learning
+                      </span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <span class="spotlight-time">3:00–3:15</span>
+                    <div class="spotlight-details">
+                      <strong>Yu He</strong>
+                      <span class="talk-title">
+                        Primal-Dual Neural Algorithmic Reasoning
+                      </span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <span class="spotlight-time">3:15–3:30</span>
+                    <div class="spotlight-details">
+                      <strong>Senem Isik</strong>
+                      <span class="talk-title">
+                        Value of Bayesian Learning in Online Decision Making
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr class="schedule-session">
+              <td>3:30–4:00</td>
+              <td>
+                <strong>Community discussion and closing</strong><br>
+                Coffee, collaborations, open problems, and closing remarks
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="register" class="section">
 	<h2>Register</h2>
